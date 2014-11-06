@@ -1,34 +1,4 @@
-<?php
 
-/*
-Include config file
-*/
-include('../../config.php');
-
-/*
-If user is not logged in, redirect to login page
-*/
-if (!isset($_SESSION['email'])) {
-	header("Location: ../login");
-	exit();
-}
-
-/*
-Grab general variables about the logged in user
-*/
-$userdata = ORM::for_table('users')->where('email',$_SESSION['email'])->find_one();
-$name = $userdata->name;
-
-/*
-Check to see if app creation is in progress, if so, fill out already-known variables
-*/
-$appname = $_SESSION['appname'];
-$apptype = $_SESSION['apptype'];
-$appurl = $_SESSION['appurl'];
-$category = $_SESSION['category'];
-$subcategory = $_SESSION['subcategory'];
-
-?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -42,7 +12,7 @@ $subcategory = $_SESSION['subcategory'];
     <link rel="stylesheet" type="text/css" href="../../assets/css/font-awesome.css" />
     <!--**********************usermenu*************************-->
     <script type='text/javascript' src="../../assets/js/jquery-1.8.2.min.js"></script>
-	<script type='text/javascript' src="../../assets/js/appcategories.js"></script>
+  <script type='text/javascript' src="../../assets/js/appcategories.js"></script>
     <link rel="stylesheet" type="text/css" href="../../assets/css/menu.css">
     <script>
 $(document).ready(function(){
@@ -66,83 +36,83 @@ $(document).ready(function(){
             $('select')
                     .selectBox({
                         mobile: true,
-						keepInViewport: false
+            keepInViewport: false
                     })
                     
 
         });
-		
-		
-		function updateAppInformation() {
-			$("#appnametext").html("<span>App Name: </span>" + $("#appnameinput").val());
-			
-			if ($("#radio1").is(':checked')) {
-				$("#apptypetext").html("<span>App Type: </span> Android Market URL");
-			}else{
-				$("#apptypetext").html("<span>App Type: </span> Non-Market URL");
-			}
-			
-			$("#appurltext").html("<span>App URL: </span> " + $("#appurlinput").val());
-			
-			$("#categorytext").html("<span>Category: </span>" + $("#appcategoryinput option:selected").text());
-			
-			$("#subcategorytext").html("<span>Sub Category: </span>" + $("#appsubcategoryinput option:selected").text());
-			
-			//updateSubCategories();
-		}
-		
-		setInterval(function(){updateAppInformation();},1000);
-		
-		
-		function setStartingValues() {
-			var apptype = '<?php echo $apptype; ?>';
-			var category = '<?php echo $category; ?>';
-			var subcategory = '<?php echo $subcategory; ?>';
-			
-			if (!apptype=='') {
-				if (apptype == 'androidmarket') {
-					$("#radio1").prop('checked',true);
-					$("#radio2").prop('checked',false);
-				}else if (apptype == 'nonmarket') {
-					$("#radio2").prop('checked',true);
-					$("#radio1").prop('checked',false);
-				}
-			}
-			
-			if (!category=='') {
-				$('#appcategoryinput option[value="' + category + '"]').prop('selected',true);
-			}
-			
-			if (!subcategory=='') {
-				$('#appsubcategoryinput option[value="' + subcategory + '"]').prop('selected',true);
-			}
-		}
-		
-		function attemptStep1() {
-			var apptype = '';
-			if ($("#radio1").is(":checked")) {
-				apptype = "androidmarket";
-			}else{
-				apptype = "nonmarket";
-			}
-			$.post("step1done.php", {
-				appname: $("#appnameinput").val(),
-				apptype: apptype,
-				appurl: $("#appurlinput").val(),
-				category: $("#appcategoryinput option:selected").val(),
-				subcategory: $("#appsubcategoryinput option:selected").val(),
-				categoryname: $("#appcategoryinput option:selected").text(),
-				subcategoryname: $("#appsubcategoryinput option:selected").text()})
-			.done(function(data) {
-				if (data == 'Missing category') {
-					alert("Please make sure you've selected both a category and a subcategory!");
-				}else if (data == 'Success'){
-					window.location.href = 'step2/';
-				}else if (data == 'App url taken'){
-					alert("An app with this url already exists! Make sure you're not creating a duplicate!");
-				}
-			});
-		}
+    
+    
+    function updateAppInformation() {
+      $("#appnametext").html("<span>App Name: </span>" + $("#appnameinput").val());
+      
+      if ($("#radio1").is(':checked')) {
+        $("#apptypetext").html("<span>App Type: </span> Android Market URL");
+      }else{
+        $("#apptypetext").html("<span>App Type: </span> Non-Market URL");
+      }
+      
+      $("#appurltext").html("<span>App URL: </span> " + $("#appurlinput").val());
+      
+      $("#categorytext").html("<span>Category: </span>" + $("#appcategoryinput option:selected").text());
+      
+      $("#subcategorytext").html("<span>Sub Category: </span>" + $("#appsubcategoryinput option:selected").text());
+      
+      //updateSubCategories();
+    }
+    
+    setInterval(function(){updateAppInformation();},1000);
+    
+    
+    function setStartingValues() {
+      var apptype = 'nonmarket';
+      var category = '5';
+      var subcategory = '2';
+      
+      if (!apptype=='') {
+        if (apptype == 'androidmarket') {
+          $("#radio1").prop('checked',true);
+          $("#radio2").prop('checked',false);
+        }else if (apptype == 'nonmarket') {
+          $("#radio2").prop('checked',true);
+          $("#radio1").prop('checked',false);
+        }
+      }
+      
+      if (!category=='') {
+        $('#appcategoryinput option[value="' + category + '"]').prop('selected',true);
+      }
+      
+      if (!subcategory=='') {
+        $('#appsubcategoryinput option[value="' + subcategory + '"]').prop('selected',true);
+      }
+    }
+    
+    function attemptStep1() {
+      var apptype = '';
+      if ($("#radio1").is(":checked")) {
+        apptype = "androidmarket";
+      }else{
+        apptype = "nonmarket";
+      }
+      $.post("step1done.php", {
+        appname: $("#appnameinput").val(),
+        apptype: apptype,
+        appurl: $("#appurlinput").val(),
+        category: $("#appcategoryinput option:selected").val(),
+        subcategory: $("#appsubcategoryinput option:selected").val(),
+        categoryname: $("#appcategoryinput option:selected").text(),
+        subcategoryname: $("#appsubcategoryinput option:selected").text()})
+      .done(function(data) {
+        if (data == 'Missing category') {
+          alert("Please make sure you've selected both a category and a subcategory!");
+        }else if (data == 'Success'){
+          window.location.href = 'step2/';
+        }else if (data == 'App url taken'){
+          alert("An app with this url already exists! Make sure you're not creating a duplicate!");
+        }
+      });
+    }
 
     </script>
     </head>
@@ -181,7 +151,7 @@ $(document).ready(function(){
             <!-- user option -->
             <div id="menu">
               <ul>
-                <li><a href="#">Welcome : <?php echo $name; ?> <b class="arrow"></b></a>
+                <li><a href="#">Welcome : Kevin Williams <b class="arrow"></b></a>
                   <ul class="sub-menu">
                     <li> <a href="#"><i class="fa fa-edit"></i>Edit Profile</a> </li>
                     <li> <a href="#"><i class="fa fa-gear"></i>Setting</a></li>
@@ -262,7 +232,7 @@ $(document).ready(function(){
                   <div class="st_form">
                     <div class="st_form_group">
                       <label class="st_form_label">App Name: <em>*</em></label>
-                      <input name="text" type="text" class="st_text_field" value="<?php echo $appname; ?>" id="appnameinput"/>
+                      <input name="text" type="text" class="st_text_field" value="KW Test App" id="appnameinput"/>
                       <span class="info">Enter a Unique Name. Only you will be seeing this name. 
                       This will not be visible to app users.</span> </div>
                     <div class="st_form_group">
@@ -278,40 +248,40 @@ $(document).ready(function(){
                     </div>
                     <div class="st_form_group">
                       <label class="st_form_label">App Package ID: <em>*</em></label>
-                      <input name="text" type="text" class="st_text_field" placeholder="https://play.google.com/store/apps/details?id=" value="<?php echo $appurl; ?>" id="appurlinput""/>
+                      <input name="text" type="text" class="st_text_field" placeholder="https://play.google.com/store/apps/details?id=" value="https://play.google.com/store/apps/details?id=04394229" id="appurlinput"/>
                       <span class="info">Please enter the Android Market URL or Off-Market URL</span> </div>
                     <div class="st_form_group">
                       <label class="st_form_label">Category : <em>*</em></label>
                       <select id="appcategoryinput" name="standard-dropdown" class="custom-class1 custom-class2" style="width: 200px;">
                         <option value="1" class="test-class-1" selected="selected">Please Select Category</option>
                         <option value="2" class="test-class-2">Arts and Entertainment</option>
-						<option value="3" class="test-class-2">Automotive</option>
-						<option value="4" class="test-class-2">Business</option>
-						<option value="5" class="test-class-2">Careers</option>
-						<option value="6" class="test-class-2">Dating</option>
-						<option value="7" class="test-class-2">Education</option>
-						<option value="8" class="test-class-2">Family and Parenting</option>
-						<option value="9" class="test-class-2">Finance Personal</option>
-						<option value="10" class="test-class-2">Food and Drink</option>
-						<option value="11" class="test-class-2">Games</option>
-						<option value="12" class="test-class-2">Health and Fitness</option>
-						<option value="13" class="test-class-2">Hobbies and Interests</option>
-						<option value="14" class="test-class-2">Home and Garden</option>
-						<option value="15" class="test-class-2">Illegal Content</option>
-						<option value="16" class="test-class-2">Law, Government, and Politics</option>
-						<option value="17" class="test-class-2">News</option>
-						<option value="18" class="test-class-2">Non-Standard Content</option>
-						<option value="19" class="test-class-2">Pets</option>
-						<option value="20" class="test-class-2">Real Estate</option>
-						<option value="21" class="test-class-2">Religion and Spirituality</option>
-						<option value="22" class="test-class-2">Science</option>
-						<option value="23" class="test-class-2">Shopping</option>
-						<option value="24" class="test-class-2">Society</option>
-						<option value="25" class="test-class-2">Sports</option>
-						<option value="26" class="test-class-2">Style and Fashion</option>
-						<option value="27" class="test-class-2">Technology and Computing</option>
-						<option value="28" class="test-class-2">Travel</option>
-						<option value="29" class="test-class-2">Uncategorized</option>
+            <option value="3" class="test-class-2">Automotive</option>
+            <option value="4" class="test-class-2">Business</option>
+            <option value="5" class="test-class-2">Careers</option>
+            <option value="6" class="test-class-2">Dating</option>
+            <option value="7" class="test-class-2">Education</option>
+            <option value="8" class="test-class-2">Family and Parenting</option>
+            <option value="9" class="test-class-2">Finance Personal</option>
+            <option value="10" class="test-class-2">Food and Drink</option>
+            <option value="11" class="test-class-2">Games</option>
+            <option value="12" class="test-class-2">Health and Fitness</option>
+            <option value="13" class="test-class-2">Hobbies and Interests</option>
+            <option value="14" class="test-class-2">Home and Garden</option>
+            <option value="15" class="test-class-2">Illegal Content</option>
+            <option value="16" class="test-class-2">Law, Government, and Politics</option>
+            <option value="17" class="test-class-2">News</option>
+            <option value="18" class="test-class-2">Non-Standard Content</option>
+            <option value="19" class="test-class-2">Pets</option>
+            <option value="20" class="test-class-2">Real Estate</option>
+            <option value="21" class="test-class-2">Religion and Spirituality</option>
+            <option value="22" class="test-class-2">Science</option>
+            <option value="23" class="test-class-2">Shopping</option>
+            <option value="24" class="test-class-2">Society</option>
+            <option value="25" class="test-class-2">Sports</option>
+            <option value="26" class="test-class-2">Style and Fashion</option>
+            <option value="27" class="test-class-2">Technology and Computing</option>
+            <option value="28" class="test-class-2">Travel</option>
+            <option value="29" class="test-class-2">Uncategorized</option>
                       </select>
                       <span class="info">Select the category that best describes your app.</span> </div>
                     <div class="st_form_group">
@@ -319,7 +289,7 @@ $(document).ready(function(){
                       <select id="appsubcategoryinput" name="standard-dropdown" class="custom-class1 custom-class2" style="width: 200px;">
                         <option value="1" class="test-class-1" selected="selected">Please Select Category</option>
                         <option value="2" class="test-class-2">Item 1</option>
-						<option value="3" class="test-class-2">Item 2</option>
+            <option value="3" class="test-class-2">Item 2</option>
                       </select>
                       <span class="info">Select the category that best describes your app.</span> </div>
                     <div class="button_row">

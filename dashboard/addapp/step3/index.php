@@ -152,13 +152,13 @@ $(document).ready(function(){
         <!-- left section -->
         <div class="left_section">
           <div class="left_info">
-            <h3 class="api_title">Your API Key</h3>
+            <h3 class="sidebar_title">Your API Key</h3>
             <div class="api_detail">
               <p><span>123400000000000000</span> You can generate or deactivate 
                 API key from Permissions API 
                 page.</p>
             </div>
-            <h3 class="api_title">Your Package name:</h3>
+            <h3 class="sidebar_title">Your Package name:</h3>
             <div class="api_detail">
               <p><span>com.fingertiseSDK</span> This is a dynamically generated 
                 package name for your Fingertize 

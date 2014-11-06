@@ -269,7 +269,7 @@ $(document).ready(function(){
         <div class="left_section">
         <h3 class="summary"> Application Summary</h3>
           <div class="left_info">
-            <h3 class="api_title">Information</h3>
+            <h3 class="sidebar_title">Information</h3>
             <div class="application_summry">
             <ul>
             <li><span>App Name:</span> <?php echo $appname; ?></li>
@@ -281,7 +281,7 @@ $(document).ready(function(){
             </div>
           </div>
           <div class="left_info">
-            <h3 class="api_title">Smartwall Ads</h3>
+            <h3 class="sidebar_title">Smartwall Ads</h3>
             <div class="application_summry">
             <ul>
             <li id="appwallads"><span>Appwall Ads:</span>Enabled</li>
@@ -294,7 +294,7 @@ $(document).ready(function(){
             </div>
           </div>
           <div class="left_info">
-            <h3 class="api_title">Banner Ads</h3>
+            <h3 class="sidebar_title">Banner Ads</h3>
             <div class="application_summry">
             <ul>
             <li id="bannerads"><span>Banner Ads:</span>Enabled</li>
