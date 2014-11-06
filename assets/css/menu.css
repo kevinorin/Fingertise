@@ -1,0 +1,112 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+	padding: 0px;
+	margin: 0px;
+}
+.je-row {
+	width: 1000px;
+	height: auto;
+	margin: 10px auto;
+}
+/*Initialize*/
+#menu {
+	height: auto;
+	float: right;
+	margin: 34px 12px 0 0px;
+	position: relative;
+	z-index: 9999;
+	max-width:211px;
+}
+#menu ul, #menu ul ul.sub-menu {
+	padding: 0;
+	margin: 0;
+}
+#menu ul li a img {
+	float: left;
+	margin: -9px 8px 0 0;
+	padding: 0px;
+}
+#menu ul li, #menu ul ul.sub-menu li {
+	list-style-type: none;
+	color: #fff;
+}
+#menu ul li.price {
+	margin: 0 65px;
+	font-size: 13px;
+}
+#menu ul li.price span {
+	color: #ff8a00;
+	margin: 0 4px;
+}
+/*Link Appearance*/
+#menu ul li a, #menu ul li ul.sub-menu li a {
+	text-decoration: none;
+	font-family: 'Swis721BTRoman';
+	color: #0c4c94;
+	display: inline-block;
+	text-align: center;
+	font-size: 14.5px;
+	padding: 11px 0px;
+	font-weight: 300;
+}
+#menu ul li ul.sub-menu li a i{ margin:0 8px 0 0px; font-size:19px; float:left;}
+#menu ul li a:hover, #menu ul li ul.sub-menu li a, #menu ul li ul.sub-menu li a:hover {
+	text-decoration: none;
+	display: inline-block;
+	text-align: center;
+}
+#menu ul li ul.sub-menu li a, #menu ul li ul.sub-menu li a:hover {
+	text-align: left;
+	padding: 11px 16px;
+	text-align: left;
+	font-size: 13px;
+	color: #fff;
+	width: 200px;
+}
+#menu ul li ul.sub-menu li a:hover {
+	background: #00a2ff;
+	color: #0c4c94;
+}
+#menu ul li a.active {
+	text-decoration: none;
+	color: #ff8a00;
+	display: inline-block;
+}
+/*Make the parent of sub-menu relative*/
+#menu ul li {
+	position: relative;
+}
+/*sub menu*/
+#menu ul li ul.sub-menu {
+	display: none;
+	position: absolute;
+	top: 64px;
+	right: -12px;
+	z-index: 10;
+	background: #1b68b9;
+	border-radius:0 0 5px 5px;
+	overflow:hidden;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+#menu ul li ul.sub-menu {
+	top: 59px;
+}
+}
+.arrow {
+	border-left: 7px solid transparent;
+	border-right: 7px solid transparent;
+	border-top: 7px solid #565b61;
+	content: "↓";
+	display: inline-block;
+	height: 0;
+	text-indent: -99999px;
+	vertical-align: top;
+	width: 0;
+	margin: 5px 0 0 6px;
+	position:absolute;
+}
+
+
+/*Right Section*/

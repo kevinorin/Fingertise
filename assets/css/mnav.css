@@ -1,0 +1,125 @@
+#nav-demo {
+	display: inline-block;
+	position: relative;
+	width: 100%;
+}
+.mnav-menu {
+	margin: 0;
+	display: block;
+	padding-left: 0;
+	list-style-type: none;
+}
+.mnav-menu-item {
+	display: inline-block;
+}
+.mnav-menu-item li {
+	list-style: none;
+}
+.mnav-menu-item a {
+	display: block;
+	padding:5px 12px;
+	font-family: 'Swis721BTBold';
+	font-size: 17px;
+	color: #565b61 ;
+	text-decoration: none;
+	text-shadow:0 1px #fbfbfb;
+	border:solid 1px #e6e6e6;
+}
+.mnav-menu-item a:hover, .mnav-menu-item a.current {
+	text-decoration: none;
+	color: #565b61 ;
+	background:url(../images/active_bg.jpg) repeat-x; border:solid 1px #cfcece; border-radius:3px;
+}
+.mnav-submenu {
+	position: absolute;
+	padding-left: 0;
+	z-index: 9999;
+	display: none;
+	list-style-type: none;
+}
+.mnav-submenu-item a {
+	padding-left: 20px;
+}
+.mnav-mobile-btn {
+	background-color: #0c4c94;
+	background-image: url("../img/mobile-nav-icon.svg");
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	cursor: pointer;
+	display: none;
+	float: right;
+	height: 30px;
+	left: auto !important;
+	padding: 5px;
+	position: absolute;
+	right: 0 !important;
+	top: -50px;
+	width: 30px;
+}
+.mnav-open-close {
+	display: none;
+	float: right;
+}
+.mnav-mobile-arrow {
+	height: 30px;
+	width: 30px;
+	padding: 5px;
+	display: block;
+	cursor: pointer;
+	background-image: url('../img/mobile-arrow-icon.svg');
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-color: #ccc;
+}
+.mnav-mobile-arrow-mirror {
+	-webkit-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+ @media only screen and (max-width: 768px) { /* Set to width according to BASE */
+#nav-demo {
+	padding-top: 0;
+}
+#nav-demo {
+	position: absolute;
+}
+.mnav-mobile-btn {
+	display: block;
+}
+.mnav-menu {
+	display: none;
+	padding: 0;
+	background: #e6e6e6;
+	position:relative;
+	z-index:9999;
+}
+.mnav-menu-item a {
+	padding: 5px 20px;
+}
+.mnav-menu-item {
+	float: none;
+	position: relative;
+	display: block;
+	width: 100%;
+}
+.mnav-open-close {
+	display: block;
+}
+.mnav-submenu {
+	width: 100%;
+	position: relative;
+}
+.mnav-submenu-item a {
+	display: block;
+}
+}
+ @media only screen and (max-width: 480px) {
+.mnav-mobile-btn {
+	top: -69px;
+}
+#nav-demo {
+	position: absolute;
+}
+}

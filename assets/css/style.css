@@ -1,0 +1,1086 @@
+/*--*********************fontface***********************--*/
+@font-face {
+	font-family: 'Swis721BTRoman';
+	src: url('../font/8650.eot');
+	src: url('../font/8650.eot') format('embedded-opentype'), url('../font/8650.woff2') format('woff2'), url('../font/8650.woff') format('woff'), url('../font/8650.ttf') format('truetype'), url('../font/8650.svg#Swis721BTRoman') format('svg');
+}
+@font-face {
+	font-family: 'Swis721BTBold';
+	src: url('../font/8651.eot');
+	src: url('../font/8651.eot') format('embedded-opentype'), url('../font/8651.woff2') format('woff2'), url('../font/8651.woff') format('woff'), url('../font/8651.ttf') format('truetype'), url('../font/8651.svg#Swis721BTBold') format('svg');
+}
+/*--*********************fontface***********************--*/
+
+
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+body {
+	font-family: 'Swis721BTRoman';
+	background: #bed4ef;
+}
+img {
+	border: none;
+}
+h1, h2, h3, h4, h5 {
+	font-weight: 400;
+	margin: 0px;
+	padding: 0px;
+}
+.clear {
+	clear: both;
+	display: block;
+	margin: 0px;
+	padding: 0px;
+}
+#main {
+	min-height: 100%;
+	position: relative;
+	background: url(../images/body_pattern.png) repeat;
+}
+#header {
+	width: 100%;
+	float: left;
+	margin: 0px;
+	padding: 0px;
+	border-top: solid 5px #1e64b4;
+	background: #e6e6e6;
+	-moz-box-shadow: 0 0 5px 2px #9c9c9c;
+	-webkit-box-shadow: 0 0 5px 2px #9c9c9c;
+	box-shadow: 0 0 5px 2px #9c9c9c;
+	position: relative;
+}
+.container {
+	width: 1080px;
+	margin: auto;
+	display: block;
+	position: relative;
+}
+.logo {
+	float: left;
+	margin: 12px 0 12px 12px;
+	padding: 0px;
+}
+.signup_link {
+	background: #1e64b4;
+	border-radius: 0 0 5px 5px;
+	float: right;
+	margin: 0px;
+	padding: 0 20px;
+}
+.signup_link ul {
+	margin: 0px;
+	padding: 0px;
+}
+.signup_link ul li {
+	list-style: none;
+	display: inline-block;
+	font-size: 16px;
+	color: #fff;
+	margin: 0 7px 6px 7px;
+}
+.signup_link ul li a {
+	text-decoration: none;
+	color: #fff;
+}
+.signup_link ul li a:hover {
+	text-decoration: none;
+	color: #00a2ff;
+}
+.navigation {
+	float: left;
+	margin: 9px 0 0 50px;
+	padding: 0px;
+	clear: right;
+	position: relative;
+}
+#mid_section {
+	margin: 0px;
+	padding: 0 0 90px 0px;
+	overflow: hidden;
+	display: block;
+	clear: both;
+}
+.mid_form_outer {
+	-webkit-box-shadow: inset 0 0 5px rgba(0,0,0,.19);
+	-moz-box-shadow: inset 0 0 5px rgba(0,0,0,.19);
+	box-shadow: inset 0 0 5px rgba(0,0,0,.19);
+	border: solid 1px rgba(255,255,255,.62);
+	width: 933px;
+	height: auto;
+	background: #dbdbdb;
+	margin: auto;
+	overflow: hidden;
+	margin-top: 35px;
+	border-radius: 3px;
+}
+.signup_form {
+	background: #e6e6e6;
+	margin: 30px;
+	padding: 0px;
+	display: block;
+	clear: both;
+	border-radius: 5px;
+	min-height: 100px;
+	overflow: hidden;
+}
+.signup_form_title {
+	margin: 0px;
+	padding: 0px;
+	background: rgb(30,100,180); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(30,100,180,1) 0%, rgba(7,131,216,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(30,100,180,1)), color-stop(100%, rgba(7,131,216,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(30,100,180,1) 0%, rgba(7,131,216,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(30,100,180,1) 0%, rgba(7,131,216,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(30,100,180,1) 0%, rgba(7,131,216,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom, rgba(30,100,180,1) 0%, rgba(7,131,216,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e64b4', endColorstr='#0783d8', GradientType=0 ); /* IE6-9 */
+	border-bottom: solid 1px #ffffff;
+}
+.signup_form_title h2 {
+	background: url(../images/title_bg.png) no-repeat right;
+	font-size: 26px;
+	color: #fff;
+	min-height: 73px;
+	line-height: 68px;
+	padding: 0 0 0 24px;
+}
+.already {
+	margin: 0px;
+	padding: 17px 26px;
+	font-size: 15px;
+}
+.already a {
+	text-decoration: none;
+	color: #1f67b7;
+	margin: 0 0 0 12px;
+}
+.already a:hover {
+	text-decoration: none;
+	color: #000;
+}
+.form_group {
+	margin: 0px;
+	padding: 14px 26px;
+	display: block;
+	clear: both;
+	overflow: hidden;
+	border-top: solid 1px #fff;
+}
+.form_group.light {
+	background: #f4f4f4;
+	min-height: 40px;
+}
+.form_group_title {
+	color: #6a6a6a;
+	font-size: 15px;
+	float: left;
+	min-width: 205px;
+	margin: 0px;
+	padding: 0px;
+	line-height: 40px;
+}
+.form_group_title em {
+	color: #ff4141;
+}
+.form_text_field {
+	-webkit-box-shadow: 0 1px rgba(255,255,255,.75), inset 0 0 5px rgba(0,0,0,.37);
+	-moz-box-shadow: 0 1px rgba(255,255,255,.75), inset 0 0 5px rgba(0,0,0,.37);
+	box-shadow: 0 1px rgba(255,255,255,.75), inset 0 0 5px rgba(0,0,0,.37);
+	border: solid 1px #fff;
+	border-radius: 5px;
+	outline: none;
+	width: 342px;
+	height: 40px;
+	float: left;
+	background: #f4f4f4;
+	font-family: 'Swis721BTRoman';
+	font-size: 15px;
+	color: #6a6a6a;
+	text-indent: 8px;
+}
+.form_text_field.capcha {
+	width: 175px;
+	height: 53px;
+	border: solid 1px #fff;
+	margin: 0 0 0 15px;
+	resize: vertical;
+	padding: 5px 0;
+}
+.form_drop {
+	border: solid 1px #c5c5c5;
+	border-radius: 5px;
+	outline: none;
+	width: 342px;
+	height: 40px;
+	float: left;
+	background: #fff;
+	font-family: 'Swis721BTRoman';
+	font-size: 15px;
+	color: #6a6a6a;
+	padding: 4px;
+}
+.capcha {
+	float: left;
+	margin: 0px;
+	padding: 0px;
+}
+.create_button {
+	margin: auto;
+	display: block;
+	background: url(../images/crate_button.png) no-repeat;
+	width: 163px;
+	height: 29px;
+	text-align: center;
+	font-family: 'Swis721BTRoman';
+	color: #fff;
+	text-transform: uppercase;
+	color: #f2f2f2;
+	font-size: 14px;
+	border: none;
+	cursor: pointer;
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+.form_bottom {
+	margin: 0px;
+	padding: 0px;
+	min-height: 18px;
+	background: rgb(30,100,180); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(30,100,180,1) 0%, rgba(7,131,216,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(30,100,180,1)), color-stop(100%, rgba(7,131,216,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(30,100,180,1) 0%, rgba(7,131,216,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(30,100,180,1) 0%, rgba(7,131,216,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(30,100,180,1) 0%, rgba(7,131,216,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom, rgba(30,100,180,1) 0%, rgba(7,131,216,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e64b4', endColorstr='#0783d8', GradientType=0 ); /* IE6-9 */
+	border-top: solid 1px #ffffff;
+}
+.chack_option {
+	margin: 0px;
+	padding: 0px;
+}
+#footer {
+	width: 100%;
+	background: #565b61;
+	margin: 18px 0px;
+	padding: 15px 0px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: auto;
+}
+.foot_link {
+	width: 100%;
+	text-align: center;
+	margin: 0px;
+	padding: 0px;
+	float: left;
+}
+.foot_link ul {
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+}
+.foot_link ul li {
+	list-style: none;
+	display: inline-block;
+	font-size: 15px;
+	margin: 0 6px;
+}
+.foot_link ul li a {
+	text-decoration: none;
+	color: #fbfeff;
+}
+.foot_link ul li a:hover {
+	text-decoration: none;
+	color: #00a2ff;
+}
+/*--***************error succes**********************--*/
+.form_text_field:focus {
+	border: solid 1px #F00;
+}
+.form_text_field.succes {
+	border: solid 1px #0C0;
+}
+/*--**********************forgotpassword****************************--*/
+.create_button.new {
+	float: left;
+	margin: 7px 0 0 205px;
+	padding: 0 15px;
+	background: rgb(31,103,183); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(31,103,183,1) 0%, rgba(31,103,183,1) 50%, rgba(14,78,151,1) 51%, rgba(14,78,151,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(31,103,183,1)), color-stop(50%, rgba(31,103,183,1)), color-stop(51%, rgba(14,78,151,1)), color-stop(100%, rgba(14,78,151,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(31,103,183,1) 0%, rgba(31,103,183,1) 50%, rgba(14,78,151,1) 51%, rgba(14,78,151,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(31,103,183,1) 0%, rgba(31,103,183,1) 50%, rgba(14,78,151,1) 51%, rgba(14,78,151,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(31,103,183,1) 0%, rgba(31,103,183,1) 50%, rgba(14,78,151,1) 51%, rgba(14,78,151,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom, rgba(31,103,183,1) 0%, rgba(31,103,183,1) 50%, rgba(14,78,151,1) 51%, rgba(14,78,151,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f67b7', endColorstr='#0e4e97', GradientType=0 ); /* IE6-9 */
+	height: 27px;
+	border-radius: 4px;
+	border: solid 2px #4b85c5;
+	width: auto;
+}
+.password p {
+	font-size: 13px;
+	color: #818181;
+	margin: 0px;
+	padding: 0px;
+}
+/*--**********************login****************************--*/
+.login_left {
+	width: 562px;
+	float: left;
+	margin: 0px;
+	padding: 0px;
+}
+.form_group_title.space {
+	min-width: 92px;
+}
+.forgot_section {
+	margin: 0px;
+	width: 100%;
+	text-align: center;
+	display: inline-block;
+}
+.forgot {
+	font-size: 15px;
+	color: #6a6a6a;
+	margin: 0 0 0 6px;
+	padding: 0 0 0 10px;
+	text-decoration: none;
+	border-left: 2px solid #6a6a6a;
+}
+.forgot:hover {
+	text-decoration: none;
+	color: #00a2ff;
+}
+.login_button_row {
+	margin: auto;
+	text-align: center;
+	display: table;
+}
+.login_button {
+	margin: 6px 0 0 0px;
+	padding: 0 15px;
+	background: rgb(31,103,183); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(31,103,183,1) 0%, rgba(31,103,183,1) 50%, rgba(14,78,151,1) 51%, rgba(14,78,151,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(31,103,183,1)), color-stop(50%, rgba(31,103,183,1)), color-stop(51%, rgba(14,78,151,1)), color-stop(100%, rgba(14,78,151,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(31,103,183,1) 0%, rgba(31,103,183,1) 50%, rgba(14,78,151,1) 51%, rgba(14,78,151,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(31,103,183,1) 0%, rgba(31,103,183,1) 50%, rgba(14,78,151,1) 51%, rgba(14,78,151,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(31,103,183,1) 0%, rgba(31,103,183,1) 50%, rgba(14,78,151,1) 51%, rgba(14,78,151,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom, rgba(31,103,183,1) 0%, rgba(31,103,183,1) 50%, rgba(14,78,151,1) 51%, rgba(14,78,151,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f67b7', endColorstr='#0e4e97', GradientType=0 ); /* IE6-9 */
+	height: 28px;
+	border-radius: 4px;
+	border: solid 2px #4b85c5;
+	width: auto;
+	font-size: 14px;
+	color: #fff;
+	text-transform: uppercase;
+	float: left;
+	cursor: pointer;
+}
+.google_signup {
+	margin: 5px 0 0 10px;
+	padding: 0px;
+	float: left;
+}
+.create_account {
+	background: #f0f0f0;
+	border-left: solid 1px #fff;
+	width: 310px;
+	min-height: 270px;
+	float: left;
+}
+.create_account img {
+	text-align: center;
+	display: block;
+	margin: auto;
+	margin-top: 35px;
+}
+.create_account p {
+	color: #6a6a6a;
+	font-size: 15px;
+	text-align: center;
+	margin: 10px 0 0 0px;
+	padding: 0px;
+	display: block;
+	clear: both;
+}
+.get_started {
+	background: rgb(31,103,183); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(31,103,183,1) 0%, rgba(31,103,183,1) 50%, rgba(14,78,151,1) 51%, rgba(14,78,151,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(31,103,183,1)), color-stop(50%, rgba(31,103,183,1)), color-stop(51%, rgba(14,78,151,1)), color-stop(100%, rgba(14,78,151,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(31,103,183,1) 0%, rgba(31,103,183,1) 50%, rgba(14,78,151,1) 51%, rgba(14,78,151,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(31,103,183,1) 0%, rgba(31,103,183,1) 50%, rgba(14,78,151,1) 51%, rgba(14,78,151,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(31,103,183,1) 0%, rgba(31,103,183,1) 50%, rgba(14,78,151,1) 51%, rgba(14,78,151,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom, rgba(31,103,183,1) 0%, rgba(31,103,183,1) 50%, rgba(14,78,151,1) 51%, rgba(14,78,151,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f67b7', endColorstr='#0e4e97', GradientType=0 ); /* IE6-9 */
+	text-align: center;
+	font-size: 18px;
+	color: #f2f2f2;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-decoration: none;
+	margin: auto;
+	border: solid 2px #4984c5;
+	border-radius: 4px;
+	padding: 11px 27px;
+	margin: auto;
+	display: table;
+	margin-top: 12px;
+}
+/*--****************************advertise**************************************--*/
+
+.advertise_left {
+	width: 474px;
+	float: left;
+	margin: 110px 0 115px 38px;
+	padding: 0px;
+	background: url(../images/arrow.png) no-repeat right center;
+}
+h3.add_title {
+	font-family: 'Swis721BTBold';
+	font-size: 28px;
+	color: #0c4c94;
+	margin: 0px;
+	padding: 0px;
+}
+p.content {
+	font-size: 16px;
+	color: #535b60;
+	margin: 13px 0 50px 0px;
+	padding: 0px;
+	display: block;
+	clear: both;
+	overflow: hidden;
+}
+.add_detail_row {
+	margin: 0 0 25px 0px;
+	padding: 0px;
+	display: block;
+	overflow: hidden;
+	clear: both;
+}
+.add_detail_row img {
+	float: left;
+}
+.add_detail_row .right {
+	float: left;
+	margin: 0 0 0 15px;
+	width: 66%;
+}
+.add_detail_row h3 {
+	font-size: 22px;
+	color: #565b61;
+	margin: 0px;
+	padding: 0px;
+}
+.add_detail_row p {
+	font-size: 16px;
+	color: #535b60;
+	margin: 3px 0 0 0px;
+	padding: 0px;
+}
+.hand {
+	float: right;
+	margin: 0px;
+	padding: 0px;
+	position: absolute;
+	right: 0;
+	top: 19px;
+	bottom: 0;
+}
+/*--****************************developers**************************************--*/
+
+.devloper_right {
+	width: 436px;
+	float: right;
+	margin: 110px 0 0px 38px;
+	padding: 0 0 0 132px;
+	background: url(../images/right_arrow.png) no-repeat left center;
+}
+.hand_download {
+	float: right;
+	margin: 0px;
+	padding: 0px;
+	position: absolute;
+	top: 102px;
+	bottom: 0;
+	left: -75px;
+}
+.start_button {
+	background-image: -webkit-linear-gradient(bottom, #0c4c94, #2067b7);
+	background-image: -moz-linear-gradient(bottom, #0c4c94, #2067b7);
+	background-image: -o-linear-gradient(bottom, #0c4c94, #2067b7);
+	background-image: linear-gradient(to top, #0c4c94, #2067b7);
+	width: 221px;
+	height: 50px;
+	text-align: center;
+	float: left;
+	border-radius: 10px;
+	font-family: 'Swis721BTBold';
+	font-size: 19px;
+	color: #fff;
+	text-transform: uppercase;
+	text-decoration: none;
+	line-height: 47px;
+	margin: 10px 0px;
+}
+.comming_soon {
+	margin: 0 0 0 7px;
+	padding: 0px;
+}
+.comming_soon img {
+	float: none!Important;
+}
+.social_icon {
+	position: absolute;
+	right: 10px;
+	top: 135px;
+	z-index: 999;
+}
+.social_icon ul li {
+	list-style: none;
+	margin: 0 0 4px 0px;
+}
+/*--************************homepage***********************************--*/
+
+.home_left {
+	width: 290px;
+	float: left;
+	text-align: right;
+	background: url(../images/top_angle_arrow.png) no-repeat right top;
+	padding: 71px 0 0 0px;
+	margin: 105px 0 0 0px;
+	min-height: 453px;
+}
+.today_app {
+	float: right;
+	margin: 0px;
+	padding: 0px;
+	position: absolute;
+	top: 20px;
+	bottom: 0;
+	left: -35px;
+	width: 100%;
+	text-align: center;
+}
+p.content_new {
+	clear: both;
+	color: #535b60;
+	display: block;
+	font-size: 16px;
+	margin: 9px 0;
+	overflow: hidden;
+	padding: 0;
+}
+.start_button.right {
+	float: right;
+}
+.home_right {
+	width: 290px;
+	float: right;
+	padding: 71px 0 0 0px;
+	margin: 105px 0 0 0px;
+	min-height: 453px;
+}
+
+
+/*--*********************Respnsive css start here******************************--*/
+
+@media (min-width: 769px) and (max-width: 1100px) {
+img {
+	max-width: 100%;
+}
+.container {
+	width: 90%;
+}
+.logo {
+	width: 25%;
+}
+.navigation {
+	margin: 9px 0 0 2%;
+}
+.mid_form_outer {
+	width: 95%;
+}
+.form_text_field {
+	width: 60%;
+}
+.form_drop {
+	width: 60%;
+}
+/*--**********************login****************************--*/
+.login_left {
+	width: 65%;
+}
+.create_account {
+	width: 34.83%;
+}
+/*--****************************advertise**************************************--*/
+.advertise_left {
+	width: 38%;
+}
+/*--****************************developers**************************************--*/
+
+.devloper_right {
+	width: 38%;
+}
+/*--************************homepage***********************************--*/
+.home_left {
+	width: 26%;
+}
+.home_right {
+	width: 26%;
+}
+}
+ @media (min-width: 681px) and (max-width: 768px) {
+img {
+	max-width: 100%;
+}
+.container {
+	width: 90%;
+}
+.navigation {
+	width: 100%;
+	margin: 9px 0 0 0;
+}
+.mid_form_outer {
+	width: 95%;
+}
+.form_group_title {
+	float: none;
+	display: block;
+	clear: both;
+}
+.form_text_field {
+	width: 100%;
+}
+.form_drop {
+	width: 100%;
+}
+/*--**********************forgotpassword****************************--*/
+.create_button.new {
+	float: none;
+	display: block;
+	margin: auto;
+	margin-top: 15px;
+}
+/*--**********************login****************************--*/
+.login_left {
+	width: 100%;
+}
+.create_account {
+	width: 100%;
+}
+/*--****************************advertise**************************************--*/
+.advertise_left {
+	width: 100%;
+	margin: 25px 0 0 0px;
+	background: url(../images/rotate_arrow.png) no-repeat center bottom;
+	padding: 0 0 100px 0px;
+}
+.hand {
+	clear: both;
+	margin: 0 0 -22px;
+	padding: 0;
+	width: 100%;
+	position: relative;
+}
+/*--****************************developers**************************************--*/
+
+.devloper_right {
+	width: 100%;
+	margin: 25px 0 0 0px;
+	background: url(../images/rotate_arrow.png) no-repeat center bottom;
+	padding: 0 0 100px 0px;
+}
+.hand_download {
+	clear: both;
+	margin: 0 0 0 0;
+	padding: 0;
+	width: 100%;
+	position: relative;
+	top: 5px;
+}
+/*--************************homepage***********************************--*/
+.home_left {
+	width: 100%;
+	text-align: left;
+	background: none;
+	min-height: 0;
+	margin: 0px;
+}
+.home_right {
+	width: 100%;
+	margin: 0px;
+	min-height: 0;
+}
+.today_app {
+	position: relative;
+	left: 0;
+	margin: 0 0 -5px 0px;
+}
+.start_button.right {
+	float: left;
+}
+}
+ @media (min-width: 481px) and (max-width: 680px) {
+img {
+	max-width: 100%;
+}
+.container {
+	width: 90%;
+}
+.navigation {
+	width: 100%;
+	margin: 9px 0 0 0;
+}
+.mid_form_outer {
+	width: 95%;
+}
+.form_group_title {
+	float: none;
+	display: block;
+	clear: both;
+}
+.form_text_field {
+	width: 100%;
+}
+.form_drop {
+	width: 100%;
+}
+.chack_option {
+	margin: 0 10px;
+}
+.form_text_field.capcha {
+	width: 45%;
+}
+/*--**********************forgotpassword****************************--*/
+.create_button.new {
+	float: none;
+	display: block;
+	margin: auto;
+	margin-top: 15px;
+}
+/*--**********************login****************************--*/
+.login_left {
+	width: 100%;
+}
+.create_account {
+	width: 100%;
+}
+/*--****************************advertise**************************************--*/
+.advertise_left {
+	width: 100%;
+	margin: 25px 0 0 0px;
+	background: url(../images/rotate_arrow.png) no-repeat center bottom;
+	padding: 0 0 100px 0px;
+}
+.hand {
+	clear: both;
+	margin: 0 0 -22px;
+	padding: 0;
+	width: 100%;
+	position: relative;
+}
+/*--****************************developers**************************************--*/
+
+.devloper_right {
+	width: 100%;
+	margin: 25px 0 0 0px;
+	background: url(../images/rotate_arrow.png) no-repeat center bottom;
+	padding: 0 0 100px 0px;
+}
+.hand_download {
+	clear: both;
+	margin: 0 0 0 0;
+	padding: 0;
+	width: 100%;
+	position: relative;
+	top: 5px;
+}
+/*--************************homepage***********************************--*/
+.home_left {
+	width: 100%;
+	text-align: left;
+	background: none;
+	min-height: 0;
+	margin: 0px;
+}
+.home_right {
+	width: 100%;
+	margin: 0px;
+	min-height: 0;
+}
+.today_app {
+	position: relative;
+	left: 0;
+	margin: 0 0 -5px 0px;
+}
+.start_button.right {
+	float: left;
+}
+}
+ @media (min-width: 321px) and (max-width: 480px) {
+img {
+	max-width: 100%;
+}
+.container {
+	width: 90%;
+}
+.navigation {
+	width: 100%;
+	margin: 9px 0 0 0;
+}
+.logo {
+	clear: both;
+	margin-top: 40px;
+	overflow: hidden;
+	width: 53%;
+}
+.signup_link {
+	position: absolute;
+	right: 0;
+	left: 0;
+	text-align: center;
+}
+.mid_form_outer {
+	width: 95%;
+}
+.form_group_title {
+	float: none;
+	display: block;
+	clear: both;
+}
+.form_text_field {
+	width: 100%;
+}
+.form_drop {
+	width: 100%;
+}
+.chack_option {
+	margin: 0 10px;
+}
+.form_text_field.capcha {
+	width: 100%;
+	margin: 5px 0 0 0px;
+}
+.signup_form_title h2 {
+	font-size: 22px;
+}
+.signup_form {
+	margin: 20px;
+}
+/*--**********************forgotpassword****************************--*/
+.create_button.new {
+	float: none;
+	display: block;
+	margin: auto;
+	margin-top: 15px;
+}
+/*--**********************login****************************--*/
+.login_left {
+	width: 100%;
+}
+.create_account {
+	width: 100%;
+}
+.login_button {
+	float: none;
+	margin: auto;
+	display: block;
+}
+.forgot {
+	display: block;
+	clear: both;
+	border: none;
+}
+/*--****************************advertise**************************************--*/
+.advertise_left {
+	width: 100%;
+	margin: 25px 0 0 0px;
+	background: url(../images/rotate_arrow.png) no-repeat center bottom;
+	padding: 0 0 100px 0px;
+}
+.hand {
+	clear: both;
+	margin: 0 0 -22px;
+	padding: 0;
+	width: 100%;
+	position: relative;
+}
+h3.add_title {
+	font-size: 25px;
+}
+/*--****************************developers**************************************--*/
+
+.devloper_right {
+	width: 100%;
+	margin: 25px 0 0 0px;
+	background: url(../images/rotate_arrow.png) no-repeat center bottom;
+	padding: 0 0 100px 0px;
+}
+.hand_download {
+	clear: both;
+	margin: 0 0 0 0;
+	padding: 0;
+	width: 100%;
+	position: relative;
+	top: 5px;
+}
+/*--************************homepage***********************************--*/
+.home_left {
+	width: 100%;
+	text-align: left;
+	background: none;
+	min-height: 0;
+	margin: 0px;
+}
+.home_right {
+	width: 100%;
+	margin: 0px;
+	min-height: 0;
+}
+.today_app {
+	position: relative;
+	left: 0;
+	margin: 0 0 -5px 0px;
+}
+.start_button.right {
+	float: left;
+}
+}
+ @media (min-width: 240px) and (max-width: 320px) {
+img {
+	max-width: 100%;
+}
+.container {
+	width: 90%;
+}
+.navigation {
+	width: 100%;
+	margin: 9px 0 0 0;
+}
+.logo {
+	clear: both;
+	margin-top: 40px;
+	overflow: hidden;
+	width: 53%;
+}
+.signup_link {
+	position: absolute;
+	right: 0;
+	left: 0;
+	text-align: center;
+}
+.mid_form_outer {
+	width: 95%;
+}
+.form_group_title {
+	float: none;
+	display: block;
+	clear: both;
+}
+.form_text_field {
+	width: 100%;
+}
+.form_drop {
+	width: 100%;
+}
+.chack_option {
+	margin: 0 10px;
+}
+.form_text_field.capcha {
+	width: 100%;
+	margin: 5px 0 0 0px;
+}
+.signup_form_title h2 {
+	font-size: 18px;
+}
+.signup_form {
+	margin: 20px;
+}
+/*--**********************forgotpassword****************************--*/
+.create_button.new {
+	float: none;
+	display: block;
+	margin: auto;
+	margin-top: 15px;
+}
+/*--**********************login****************************--*/
+.login_left {
+	width: 100%;
+}
+.create_account {
+	width: 100%;
+}
+.login_button {
+	float: none;
+	margin: auto;
+	display: block;
+}
+.forgot {
+	display: block;
+	clear: both;
+	border: none;
+}
+/*--****************************advertise**************************************--*/
+.advertise_left {
+	width: 100%;
+	margin: 25px 0 0 0px;
+	background: url(../images/rotate_arrow.png) no-repeat center bottom;
+	padding: 0 0 100px 0px;
+}
+.hand {
+	clear: both;
+	margin: 0 0 -22px;
+	padding: 0;
+	width: 100%;
+	position: relative;
+}
+h3.add_title {
+	font-size: 25px;
+}
+/*--****************************developers**************************************--*/
+
+.devloper_right {
+	width: 100%;
+	margin: 25px 0 0 0px;
+	background: url(../images/rotate_arrow.png) no-repeat center bottom;
+	padding: 0 0 100px 0px;
+}
+.hand_download {
+	clear: both;
+	margin: 0 0 0 0;
+	padding: 0;
+	width: 100%;
+	position: relative;
+	top: 5px;
+}
+/*--************************homepage***********************************--*/
+.home_left {
+	width: 100%;
+	text-align: left;
+	background: none;
+	min-height: 0;
+	margin: 0px;
+}
+.home_right {
+	width: 100%;
+	margin: 0px;
+	min-height: 0;
+}
+.today_app {
+	position: relative;
+	left: 0;
+	margin: 0 0 -5px 0px;
+}
+.start_button.right {
+	float: left;
+}
+}

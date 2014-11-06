@@ -1,0 +1,43 @@
+[04-Nov-2014 21:33:00 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20100525/php_mcrypt.dll' - /usr/local/lib/php/extensions/no-debug-non-zts-20100525/php_mcrypt.dll: cannot open shared object file: No such file or directory in Unknown on line 0
+[04-Nov-2014 21:33:07 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20100525/php_mcrypt.dll' - /usr/local/lib/php/extensions/no-debug-non-zts-20100525/php_mcrypt.dll: cannot open shared object file: No such file or directory in Unknown on line 0
+[05-Nov-2014 21:55:40 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20100525/php_mcrypt.dll' - /usr/local/lib/php/extensions/no-debug-non-zts-20100525/php_mcrypt.dll: cannot open shared object file: No such file or directory in Unknown on line 0
+[05-Nov-2014 21:55:43 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20100525/php_mcrypt.dll' - /usr/local/lib/php/extensions/no-debug-non-zts-20100525/php_mcrypt.dll: cannot open shared object file: No such file or directory in Unknown on line 0
+[06-Nov-2014 05:03:29 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20100525/php_mcrypt.dll' - /usr/local/lib/php/extensions/no-debug-non-zts-20100525/php_mcrypt.dll: cannot open shared object file: No such file or directory in Unknown on line 0
+[06-Nov-2014 05:03:31 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20100525/php_mcrypt.dll' - /usr/local/lib/php/extensions/no-debug-non-zts-20100525/php_mcrypt.dll: cannot open shared object file: No such file or directory in Unknown on line 0
+[06-Nov-2014 05:04:45 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20100525/php_mcrypt.dll' - /usr/local/lib/php/extensions/no-debug-non-zts-20100525/php_mcrypt.dll: cannot open shared object file: No such file or directory in Unknown on line 0
+[06-Nov-2014 05:04:59 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20100525/php_mcrypt.dll' - /usr/local/lib/php/extensions/no-debug-non-zts-20100525/php_mcrypt.dll: cannot open shared object file: No such file or directory in Unknown on line 0
+[06-Nov-2014 05:04:59 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'arctican_user1'@'localhost' (using password: YES)' in /home/kevinw/public_html/sandbox.kevinw.me/fingertise2/assets/idiorm.php:255
+Stack trace:
+#0 /home/kevinw/public_html/sandbox.kevinw.me/fingertise2/assets/idiorm.php(255): PDO->__construct('mysql:host=loca...', 'arctican_user1', 'aquaeeveot1', NULL)
+#1 /home/kevinw/public_html/sandbox.kevinw.me/fingertise2/assets/idiorm.php(237): ORM::_setup_db('default')
+#2 /home/kevinw/public_html/sandbox.kevinw.me/fingertise2/login/attemptlogin.php(8): ORM::for_table('users')
+#3 {main}
+  thrown in /home/kevinw/public_html/sandbox.kevinw.me/fingertise2/assets/idiorm.php on line 255
+[06-Nov-2014 05:05:04 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20100525/php_mcrypt.dll' - /usr/local/lib/php/extensions/no-debug-non-zts-20100525/php_mcrypt.dll: cannot open shared object file: No such file or directory in Unknown on line 0
+[06-Nov-2014 05:05:04 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'arctican_user1'@'localhost' (using password: YES)' in /home/kevinw/public_html/sandbox.kevinw.me/fingertise2/assets/idiorm.php:255
+Stack trace:
+#0 /home/kevinw/public_html/sandbox.kevinw.me/fingertise2/assets/idiorm.php(255): PDO->__construct('mysql:host=loca...', 'arctican_user1', 'aquaeeveot1', NULL)
+#1 /home/kevinw/public_html/sandbox.kevinw.me/fingertise2/assets/idiorm.php(237): ORM::_setup_db('default')
+#2 /home/kevinw/public_html/sandbox.kevinw.me/fingertise2/login/attemptlogin.php(8): ORM::for_table('users')
+#3 {main}
+  thrown in /home/kevinw/public_html/sandbox.kevinw.me/fingertise2/assets/idiorm.php on line 255
+[06-Nov-2014 05:05:04 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20100525/php_mcrypt.dll' - /usr/local/lib/php/extensions/no-debug-non-zts-20100525/php_mcrypt.dll: cannot open shared object file: No such file or directory in Unknown on line 0
+[06-Nov-2014 05:05:04 UTC] PHP Notice:  Undefined index: email in /home/kevinw/public_html/sandbox.kevinw.me/fingertise2/login/attemptlogin.php on line 5
+[06-Nov-2014 05:05:04 UTC] PHP Notice:  Undefined index: password in /home/kevinw/public_html/sandbox.kevinw.me/fingertise2/login/attemptlogin.php on line 6
+[06-Nov-2014 05:05:04 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'arctican_user1'@'localhost' (using password: YES)' in /home/kevinw/public_html/sandbox.kevinw.me/fingertise2/assets/idiorm.php:255
+Stack trace:
+#0 /home/kevinw/public_html/sandbox.kevinw.me/fingertise2/assets/idiorm.php(255): PDO->__construct('mysql:host=loca...', 'arctican_user1', 'aquaeeveot1', NULL)
+#1 /home/kevinw/public_html/sandbox.kevinw.me/fingertise2/assets/idiorm.php(237): ORM::_setup_db('default')
+#2 /home/kevinw/public_html/sandbox.kevinw.me/fingertise2/login/attemptlogin.php(8): ORM::for_table('users')
+#3 {main}
+  thrown in /home/kevinw/public_html/sandbox.kevinw.me/fingertise2/assets/idiorm.php on line 255
+[06-Nov-2014 05:05:05 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20100525/php_mcrypt.dll' - /usr/local/lib/php/extensions/no-debug-non-zts-20100525/php_mcrypt.dll: cannot open shared object file: No such file or directory in Unknown on line 0
+[06-Nov-2014 05:05:05 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'arctican_user1'@'localhost' (using password: YES)' in /home/kevinw/public_html/sandbox.kevinw.me/fingertise2/assets/idiorm.php:255
+Stack trace:
+#0 /home/kevinw/public_html/sandbox.kevinw.me/fingertise2/assets/idiorm.php(255): PDO->__construct('mysql:host=loca...', 'arctican_user1', 'aquaeeveot1', NULL)
+#1 /home/kevinw/public_html/sandbox.kevinw.me/fingertise2/assets/idiorm.php(237): ORM::_setup_db('default')
+#2 /home/kevinw/public_html/sandbox.kevinw.me/fingertise2/login/attemptlogin.php(8): ORM::for_table('users')
+#3 {main}
+  thrown in /home/kevinw/public_html/sandbox.kevinw.me/fingertise2/assets/idiorm.php on line 255
+[06-Nov-2014 05:06:38 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20100525/php_mcrypt.dll' - /usr/local/lib/php/extensions/no-debug-non-zts-20100525/php_mcrypt.dll: cannot open shared object file: No such file or directory in Unknown on line 0
+[06-Nov-2014 05:10:52 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20100525/php_mcrypt.dll' - /usr/local/lib/php/extensions/no-debug-non-zts-20100525/php_mcrypt.dll: cannot open shared object file: No such file or directory in Unknown on line 0

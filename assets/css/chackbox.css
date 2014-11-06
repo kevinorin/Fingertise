@@ -1,0 +1,83 @@
+.example{
+  margin-bottom : 1.5em;
+}
+
+input[type=checkbox]:not(old),
+input[type=radio   ]:not(old){
+  width     : 2em;
+  margin    : 0;
+  padding   : 0;
+  font-size : 1em;
+  opacity   : 0;
+}
+
+input[type=checkbox]:not(old) + label,
+input[type=radio   ]:not(old) + label{
+  display      : inline-block;
+  margin-left  : -26px;
+  line-height  : 30px;
+  font-family: 'Swis721BTRoman';
+  color:#6a6a6a;
+  font-size:12.5px;
+  margin-top:1px;
+}
+
+input[type=checkbox]:not(old) + label > span{
+  display          : inline-block;
+  width            : 26px;
+  height           : 26px;
+  margin           : 0.25em 0.5em 0.25em 0.25em;
+  border           : solid 1px #fff;
+  border-radius    :3px;
+  background       : #f4f4f4;
+	-webkit-box-shadow: 0 1px rgba(255,255,255,.75), inset 0 0 5px rgba(0,0,0,.17);
+	-moz-box-shadow: 0 1px rgba(255,255,255,.75), inset 0 0 5px rgba(0,0,0,.17);
+	box-shadow: 0 1px rgba(255,255,255,.75), inset 0 0 5px rgba(0,0,0,.17);
+  vertical-align   : bottom;
+}
+
+input[type=radio   ]:not(old) + label > span{
+  display          : inline-block;
+  width            : 20px;
+  height           : 20px;
+  margin           : 0.25em 0.5em 0.25em 0.25em;
+  border           : solid 1px #fff;
+  border-radius:50px;
+  border-radius    :50px;
+  background       : #f4f4f4;
+	-webkit-box-shadow: 0 1px rgba(255,255,255,.75), inset 0 0 5px rgba(0,0,0,.17);
+	-moz-box-shadow: 0 1px rgba(255,255,255,.75), inset 0 0 5px rgba(0,0,0,.17);
+	box-shadow: 0 1px rgba(255,255,255,.75), inset 0 0 5px rgba(0,0,0,.17);
+  vertical-align   : bottom;
+}
+
+
+input[type=checkbox]:not(old):checked + label > span,
+input[type=radio   ]:not(old):checked + label > span{
+  background-image :    -moz-linear-gradient(rgb(224,224,224),rgb(240,240,240));
+  background-image :     -ms-linear-gradient(rgb(224,224,224),rgb(240,240,240));
+  background-image :      -o-linear-gradient(rgb(224,224,224),rgb(240,240,240));
+  background-image : -webkit-linear-gradient(rgb(224,224,224),rgb(240,240,240));
+  background-image :         linear-gradient(rgb(224,224,224),rgb(240,240,240));
+}
+
+input[type=checkbox]:not(old):checked + label > span:before{
+  content     : '✓';
+  display     : block;
+  width       : 27px;
+  text-align:center;
+  color       : #939393;
+  font-size   : 24px;
+  line-height : 26px;
+  text-align  : center;
+  font-weight : bold;
+}
+
+input[type=radio]:not(old):checked +  label > span > span{
+  display          : block;
+  width            : 10px;
+  height           : 10px;
+  margin           : 5px;
+  border-radius    : 50px;
+  background       : #575757;
+}
