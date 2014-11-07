@@ -9,6 +9,7 @@
     <meta name="author" content="">
     <title>Fingertise</title>
     <link rel="stylesheet" type="text/css" href="../../assets/css/dashstyle.css" />
+    <link rel="stylesheet" type="text/css" href="../../assets/css/style.css" />
     <link rel="stylesheet" type="text/css" href="../../assets/css/font-awesome.css" />
     <!--**********************usermenu*************************-->
     <script type='text/javascript' src="../../assets/js/jquery-1.8.2.min.js"></script>
@@ -254,16 +255,22 @@ $(document).ready(function(){
               </div>
               <!-- right left -->
               
-              <div class="help_info">
+              <div class="help_info gradient-blue">
                 <span class="title_lifesaver"></span>
                 <p>Fingertize is required to collect tax information from all its developers - you are responsible for keeping it up to date. You can change your tax information at any time. NOTE: Any changes made in your payment section between 15th till end of month will be not be considered for current pay cycle. For any payment related query please write to us: <a href="mailto:support@fingertize.com">support@fingertize.com</a></p>
               </div>
 
-              <div class="help_info">
+              <div class="help_info gradient-yellow">
                 <span class="title_lifesaver"></span>
                 <p>The minimum earnings to qualify for weekly payment is $300/week in case of Bundled SDK and $600/week in case of Standard Pub SDK. The user after reaching the minimum set earnings will be included in an approval period of 30 days, the user has to qualify for the weekly during these 4 weeks, after which the user will be paid on Net 7 basis thereafter. Until such time, the user will be paid on Net 30 basis. Tax Information</p>
               </div>
+
+              <div class="help_info">
+                <h3>Helpful Information</h3>
+                <p>As a developer, it is your duty to make sure that you have entered your tax-related information correctly. Choose your country of residence and your account type. Account type refers to whether you are registering with Fingertize as an individual or a part of your organisation. Enter your registered business name. Business address details and Depending on your country, respective local TAX ID. Choose the payment details. Currently, Fingertize makes payments via ACH,Wire and Paypal transfer. Enter the respective details and click 'Submit' for the information to be stored.</p>
+              </div>
             </div>
+
             <!-- right section --> 
           </div>
         </div>
