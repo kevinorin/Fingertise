@@ -1,13 +1,21 @@
 /*--*********************fontface***********************--*/
 @font-face {
 	font-family: 'Swis721BTRoman';
-	src: url('../font/8650.eot');
-	src: url('../font/8650.eot') format('embedded-opentype'), url('../font/8650.woff2') format('woff2'), url('../font/8650.woff') format('woff'), url('../font/8650.ttf') format('truetype'), url('../font/8650.svg#Swis721BTRoman') format('svg');
+	src: url('../font/Swis721BTRoman.eot');
+	src: url('../font/Swis721BTRoman.eot') format('embedded-opentype'), 
+	url('../font/Swis721BTRoman.woff2') format('woff2'), 
+	url('../font/Swis721BTRoman.woff') format('woff'), 
+	url('../font/Swis721BTRoman.ttf') format('truetype'), 
+	url('../font/Swis721BTRoman.svg#Swis721BTRoman') format('svg');
 }
 @font-face {
 	font-family: 'Swis721BTBold';
-	src: url('../font/8651.eot');
-	src: url('../font/8651.eot') format('embedded-opentype'), url('../font/8651.woff2') format('woff2'), url('../font/8651.woff') format('woff'), url('../font/8651.ttf') format('truetype'), url('../font/8651.svg#Swis721BTBold') format('svg');
+	src: url('../font/Swis721BTBold.eot');
+	src: url('../font/Swis721BTBold.eot') format('embedded-opentype'), 
+	url('../font/Swis721BTBold.woff2') format('woff2'), 
+	url('../font/Swis721BTBold.woff') format('woff'), 
+	url('../font/Swis721BTBold.ttf') format('truetype'), 
+	url('../font/Swis721BTBold.svg#Swis721BTBold') format('svg');
 }
 /*--*********************fontface***********************--*/
 

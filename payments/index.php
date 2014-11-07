@@ -138,8 +138,8 @@ $(document).ready(function(){
             <nav>
               <div class="naviagtion">
                 <ul>
-                  <li class="active"><a href="#" class="active dash"><span>Dashboard</span></a></li>
-                  <li><a href="#" class="payment"><span>Payments</span></a></li>
+                  <li><a href="#" class="dash"><span>Dashboard</span></a></li>
+                  <li class="active"><a href="#" class="payment active"><span>Payments</span></a></li>
                   <li><a href="#" class="report"><span>Reports</span></a></li>
                   <li><a href="#" class="help"><span>Helpdesk</span></a></li>
                   <li><a href="#" class="api"><span>API</span></a></li>
@@ -170,7 +170,7 @@ $(document).ready(function(){
       <!-- head title bar -->
       <div id="head_title_bar">
         <div class="container">
-          <h2 class="app_title">Add Application</h2>
+          <h2 class="head_title payments">Payment Details</h2>
           <div class="stats">
             <ul>
               <li>132,510
@@ -193,97 +193,49 @@ $(document).ready(function(){
           <div class="container"> 
             <!-- left section -->
             <div class="left_section" style="min-height:622px;">
-              <h3 class="summary"> Application Summary</h3>
               <div class="left_info">
-                <h3 class="sidebar_title">Information</h3>
-                <div class="application_summry">
-                  <ul>
-                    <li id="appnametext"><span>App Name:</span></li>
-                    <li id="apptypetext"><span>App Type:</span></li>
-                    <li id="appurltext"><span>App URL:</span>https://play.google.com/store/
-                      apps/details?id=</li>
-                    <li id="categorytext"><span>Category:</span></li>
-                    <li id="subcategorytext"><span>Sub Category:</span></li>
-                  </ul>
-                </div>
+                <h3 class="sidebar_title">Payment Info</h3>
+                <h3 class="sidebar_title">Payment History</h3>
               </div>
             </div>
             <!-- left section --> 
             
             <!-- right section -->
-            <div class="right_section"> 
-              <!-- step -->
-              <div class="step_link">
-                <ul>
-                  <li><a href="#_" class="active step_one"> Step 1 - App Info</a></li>
-                  <li><a href="#_" class="step_two"> Step 2 - Ad Formats & Targeting</a></li>
-                  <li><a href="#_" class="step_two"> Application Summary</a></li>
-                </ul>
-              </div>
-              <!-- step --> 
-              
+            <div class="right_section">      
               <!-- right left -->
               <div class="right_left">
                 <div class="app_info_step">
                   <div class="smart_title">
-                    <h4>App Information</h4>
+                    <h4>Tax Information</h4>
                   </div>
                   <!-- app info form -->
                   <div class="st_form">
+                    <!-- country -->
                     <div class="st_form_group">
-                      <label class="st_form_label">App Name: <em>*</em></label>
-                      <input name="text" type="text" class="st_text_field" value="KW Test App" id="appnameinput"/>
-                      <span class="info">Enter a Unique Name. Only you will be seeing this name. 
-                      This will not be visible to app users.</span> </div>
+                      <label class="st_form_label">Country : <em>*</em></label>
+                      <select id="appcategoryinput" name="standard-dropdown" class="custom-class1 custom-class2" style="width: 200px;">
+                        <option value="1" selected="selected">Select Country</option>
+                        <option value="2">United States</option>
+                        <option value="3">Country</option>
+                        <option value="4">Country</option>
+                      </select>
+                    </div>
+                    <!-- account type -->
                     <div class="st_form_group">
-                      <label class="st_form_label">App Type: <em>*</em></label>
-                      <div class="add_type">
-                        <input id="radio1" type="radio" name="radio" value="1" checked="checked"">
-                        <label for="radio1"><span><span></span></span>Android Market URL</label>
-                      </div>
-                      <div class="add_type">
-                        <input id="radio2" type="radio" name="radio" value="2" checked="checked"">
-                        <label for="radio2"><span><span></span></span>Non-Market URL</label>
-                        <a href="#_"><img src="../../assets/images/info_icon_new.png" alt="info" /></a> </div>
+                      <label class="st_form_label">Account Type : <em>*</em></label>
+                      <select id="appcategoryinput" name="standard-dropdown" class="custom-class1 custom-class2" style="width: 200px;">
+                        <option value="1" selected="selected">Select Account Type</option>
+                        <option value="2">Account 1</option>
+                        <option value="3">Account 2</option>
+                        <option value="4">Account 3</option>
+                      </select>
                     </div>
                     <div class="st_form_group">
-                      <label class="st_form_label">App Package ID: <em>*</em></label>
-                      <input name="text" type="text" class="st_text_field" placeholder="https://play.google.com/store/apps/details?id=" value="https://play.google.com/store/apps/details?id=04394229" id="appurlinput"/>
-                      <span class="info">Please enter the Android Market URL or Off-Market URL</span> </div>
-                    <div class="st_form_group">
-                      <label class="st_form_label">Category : <em>*</em></label>
-                      <select id="appcategoryinput" name="standard-dropdown" class="custom-class1 custom-class2" style="width: 200px;">
-                        <option value="1" class="test-class-1" selected="selected">Please Select Category</option>
-                        <option value="2" class="test-class-2">Arts and Entertainment</option>
-            <option value="3" class="test-class-2">Automotive</option>
-            <option value="4" class="test-class-2">Business</option>
-            <option value="5" class="test-class-2">Careers</option>
-            <option value="6" class="test-class-2">Dating</option>
-            <option value="7" class="test-class-2">Education</option>
-            <option value="8" class="test-class-2">Family and Parenting</option>
-            <option value="9" class="test-class-2">Finance Personal</option>
-            <option value="10" class="test-class-2">Food and Drink</option>
-            <option value="11" class="test-class-2">Games</option>
-            <option value="12" class="test-class-2">Health and Fitness</option>
-            <option value="13" class="test-class-2">Hobbies and Interests</option>
-            <option value="14" class="test-class-2">Home and Garden</option>
-            <option value="15" class="test-class-2">Illegal Content</option>
-            <option value="16" class="test-class-2">Law, Government, and Politics</option>
-            <option value="17" class="test-class-2">News</option>
-            <option value="18" class="test-class-2">Non-Standard Content</option>
-            <option value="19" class="test-class-2">Pets</option>
-            <option value="20" class="test-class-2">Real Estate</option>
-            <option value="21" class="test-class-2">Religion and Spirituality</option>
-            <option value="22" class="test-class-2">Science</option>
-            <option value="23" class="test-class-2">Shopping</option>
-            <option value="24" class="test-class-2">Society</option>
-            <option value="25" class="test-class-2">Sports</option>
-            <option value="26" class="test-class-2">Style and Fashion</option>
-            <option value="27" class="test-class-2">Technology and Computing</option>
-            <option value="28" class="test-class-2">Travel</option>
-            <option value="29" class="test-class-2">Uncategorized</option>
-                      </select>
-                      <span class="info">Select the category that best describes your app.</span> </div>
+                      <label class="st_form_label">Business Name: <em>*</em></label>
+                      <input name="text" type="text" class="st_text_field"/>
+                      <span class="info">If you are a legally registered business entity, enter the business name. If you are using it for your personal account, just enter your full name here.</span> 
+                    </div>
+              
                     <div class="st_form_group">
                       <label class="st_form_label">Sub Category : <em>*</em></label>
                       <select id="appsubcategoryinput" name="standard-dropdown" class="custom-class1 custom-class2" style="width: 200px;">
@@ -303,13 +255,13 @@ $(document).ready(function(){
               <!-- right left -->
               
               <div class="help_info">
-                <h3>Helpful Information</h3>
-                <p>Complete the information to register your 
-                  site or app and retrieve the appropriate 
-                  Developer Code on subsequent page. 
-                  Each unique site or app has a specific 
-                  version of Developer Code required to 
-                  integrated with the Fingertize marketplace.</p>
+                <span class="title_lifesaver"></span>
+                <p>Fingertize is required to collect tax information from all its developers - you are responsible for keeping it up to date. You can change your tax information at any time. NOTE: Any changes made in your payment section between 15th till end of month will be not be considered for current pay cycle. For any payment related query please write to us: <a href="mailto:support@fingertize.com">support@fingertize.com</a></p>
+              </div>
+
+              <div class="help_info">
+                <span class="title_lifesaver"></span>
+                <p>The minimum earnings to qualify for weekly payment is $300/week in case of Bundled SDK and $600/week in case of Standard Pub SDK. The user after reaching the minimum set earnings will be included in an approval period of 30 days, the user has to qualify for the weekly during these 4 weeks, after which the user will be paid on Net 7 basis thereafter. Until such time, the user will be paid on Net 30 basis. Tax Information</p>
               </div>
             </div>
             <!-- right section --> 

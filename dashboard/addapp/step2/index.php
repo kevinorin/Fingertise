@@ -244,7 +244,7 @@ $(document).ready(function(){
   <!-- head title bar -->
   <div id="head_title_bar">
     <div class="container">
-      <h2 class="app_title">Add Application</h2>
+      <h2 class="head_title app">Add Application</h2>
       <div class="stats">
         <ul>
           <li>132,510

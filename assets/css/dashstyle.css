@@ -1,13 +1,21 @@
 /*--*********************fontface***********************--*/
 @font-face {
 	font-family: 'Swis721BTRoman';
-	src: url('../font/8650.eot');
-	src: url('../font/8650.eot') format('embedded-opentype'), url('../font/8650.woff2') format('woff2'), url('../font/8650.woff') format('woff'), url('../font/8650.ttf') format('truetype'), url('../font/8650.svg#Swis721BTRoman') format('svg');
+	src: url('../font/Swis721BTRoman.eot');
+	src: url('../font/Swis721BTRoman.eot') format('embedded-opentype'), 
+	url('../font/Swis721BTRoman.woff2') format('woff2'), 
+	url('../font/Swis721BTRoman.woff') format('woff'), 
+	url('../font/Swis721BTRoman.ttf') format('truetype'), 
+	url('../font/Swis721BTRoman.svg#Swis721BTRoman') format('svg');
 }
 @font-face {
 	font-family: 'Swis721BTBold';
-	src: url('../font/8651.eot');
-	src: url('../font/8651.eot') format('embedded-opentype'), url('../font/8651.woff2') format('woff2'), url('../font/8651.woff') format('woff'), url('../font/8651.ttf') format('truetype'), url('../font/8651.svg#Swis721BTBold') format('svg');
+	src: url('../font/Swis721BTBold.eot');
+	src: url('../font/Swis721BTBold.eot') format('embedded-opentype'), 
+	url('../font/Swis721BTBold.woff2') format('woff2'), 
+	url('../font/Swis721BTBold.woff') format('woff'), 
+	url('../font/Swis721BTBold.ttf') format('truetype'), 
+	url('../font/Swis721BTBold.svg#Swis721BTBold') format('svg');
 }
 /*--*********************fontface***********************--*/
 
@@ -196,6 +204,20 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0584d9', end
 	margin: 0px;
 	padding: 0px;
 }
+.head_title {
+	font-family: 'Swis721BTRoman';
+	font-size: 24px;
+	color: #ffffff;
+	text-shadow: 0 1px #0e325a;
+	float: left;
+	margin: 0px;
+	padding: 18px 0;
+	text-indent: 65px;
+}
+
+.head_title.payments { background: url(../images/head_title_payments.png) no-repeat left; }
+.head_title.app { background: url(../images/head_title_app.png) no-repeat left; }
+
 .dash_title {
 	background: url(../images/dash_title_icon.png) no-repeat left;
 	font-family: 'Swis721BTRoman';
@@ -851,16 +873,7 @@ p.sdk_content {
 	margin-top: 17px;
 	margin-bottom: 20px;
 }
-.app_title {
-	background: url(../images/app_title_icon.png) no-repeat left;
-	font-family: 'Swis721BTRoman';
-	font-size: 24px;
-	color: #ffffff;
-	text-shadow: 0 1px #0e325a;
-	float: left;
-	margin: 0px;
-	padding: 18px 52px;
-}
+
 .summary {
 	font-family: 'Swis721BTRoman';
 	font-size: 14.5px;
@@ -979,7 +992,7 @@ p.sdk_content {
 	font-size: 14.5px;
 	text-shadow: 0 1px #fff;
 	color: #0c4c94;
-	text-transform: uppercase;
+	text-transform: capitalize;
 	line-height: 34px;
 }
 .smart_title h4 em {
@@ -1070,7 +1083,7 @@ p.smart_content.blue {
 	width: 275px;
 	height: auto;
 	float: right;
-	margin: 8px 8px 0 0px;
+	margin: 8px 8px 4px 0px;
 	border-radius: 3px;
 }
 .help_info h3 {
@@ -1081,6 +1094,18 @@ p.smart_content.blue {
 	background: url(../images/helpful_icon.png) no-repeat left;
 	border-bottom: solid 1px #c2c2c2;
 	background-position: 15px 9px;
+}
+.title_lifesaver {
+	color: #0c4c94;
+	display: block;
+	font-size: 15px;
+	height:20px;
+	margin: 0px;
+	padding: 10px 0;
+	background: url(../images/help_small_icon.png) no-repeat;
+	border-bottom: solid 1px #c2c2c2;
+	background-position: 240px 8px;
+	width: 100%;
 }
 .help_info p {
 	color: #797979;
