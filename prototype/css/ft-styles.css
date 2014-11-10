@@ -1,3 +1,10 @@
+/* Fonts */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700);
+
+.dash-title, .stats ul li {
+	font-family: 'Open Sans', sans-serif;
+}
+
 .navbar-default {
 	background-color: #e6e6e6;
 	border-color: #e7e7e7;
@@ -51,24 +58,24 @@ body, #page-wrapper {
 
 /* Dashboard Stats */
 .dash-title {
-	background: url(../../assets/images/dash_title_icon.png) no-repeat left;
-	font-family: 'Swis721BTRoman';
 	font-size: 24px;
 	color: #ffffff;
 	text-shadow: 0 1px #0e325a;
 	float: left;
 	margin: 0px;
-	padding: 18px 52px;
+	padding: 18px 0;
 }
 .stats {
 	float: right;
 	margin: 0px;
 	padding: 0px;
 }
+.stats ul {
+	margin: 0;
+}
 .stats ul li {
 	list-style: none;
 	display: inline-block;
-	font-family: 'Swis721BTRoman';
 	font-size: 24px;
 	color: #fff;
 	text-align: center;
