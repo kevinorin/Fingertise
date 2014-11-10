@@ -2,6 +2,10 @@
 	background-color: #e6e6e6;
 	border-color: #e7e7e7;
 }
+
+a { color:#565b61; }
+a:hover { color:#11498a; }
+
 a.logo {
 	margin-left:10px;
 }
@@ -33,6 +37,15 @@ a.logo {
 body, #page-wrapper {
 	background: url(../../assets/images/body_pattern.png) repeat #bed4ef;
 	border: none !important;
+}
+
+#side-menu li .fa {
+	color: #11498a;
+	font-size: 32px !important;
+}
+
+.sidebar .nav-second-level li a {
+	padding-left: 70px;
 }
 
 
