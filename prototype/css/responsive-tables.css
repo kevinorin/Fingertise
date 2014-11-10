@@ -1,23 +1,28 @@
 /* 
 Generic Styling, for Desktops/Laptops 
 */
+.resp-table {
+	color: #626262;
+	font-size: 12px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: normal;
+}
 table { 
   width: 100%; 
   border-collapse: collapse; 
 }
 /* Zebra striping */
 tr:nth-of-type(odd) { 
-  background: #eee; 
+  background: #e6e6e6; 
 }
 th { 
-  background: #333; 
-  color: white; 
+  background: #d0d0d0; 
+  color: #626262; 
   font-weight: bold; 
 }
 td, th { 
   padding: 6px; 
-  border: 1px solid #ccc; 
-  text-align: left; 
+  text-align: center; 
 }
 
 /* 
