@@ -1,7 +1,11 @@
+table.totals {
+	font-weight: bold;
+}
+
 /* 
 Generic Styling, for Desktops/Laptops 
 */
-.resp-table {
+table {
 	color: #626262;
 	font-size: 12px;
 	font-family: 'Open Sans', sans-serif;
@@ -12,8 +16,8 @@ table {
   border-collapse: collapse; 
 }
 /* Zebra striping */
-tr:nth-of-type(odd) { 
-  background: #e6e6e6; 
+tr:nth-of-type(even) { 
+  background: #ffffff; 
 }
 th { 
   background: #d0d0d0; 
@@ -56,7 +60,7 @@ only screen and (max-width: 760px),
 		padding-left: 50%; 
 	}
 	
-	td:before { 
+	table.resp-table td:before { 
 		/* Now like a table header */
 		position: absolute;
 		/* Top/left values mimic padding */
@@ -70,14 +74,14 @@ only screen and (max-width: 760px),
 	/*
 	Label the data
 	*/
-	td:nth-of-type(1):before { content: "checkbox"; }
-	td:nth-of-type(2):before { content: "gear"; }
-	td:nth-of-type(3):before { content: "Campaign Name"; }
-	td:nth-of-type(4):before { content: "APP ID"; }
-	td:nth-of-type(5):before { content: "Ad Type"; }
-	td:nth-of-type(6):before { content: "Status"; }
-	td:nth-of-type(7):before { content: "Daily Budget"; }
-	td:nth-of-type(8):before { content: "Impressions / Clicks"; }
-	td:nth-of-type(9):before { content: "CPM"; }
-	td:nth-of-type(10):before { content: "Spent"; }
+	table.resp-table td:nth-of-type(1):before { content: "checkbox"; }
+	table.resp-table td:nth-of-type(2):before { content: "gear"; }
+	table.resp-table td:nth-of-type(3):before { content: "Campaign Name"; }
+	table.resp-table td:nth-of-type(4):before { content: "APP ID"; }
+	table.resp-table td:nth-of-type(5):before { content: "Ad Type"; }
+	table.resp-table td:nth-of-type(6):before { content: "Status"; }
+	table.resp-table td:nth-of-type(7):before { content: "Daily Budget"; }
+	table.resp-table td:nth-of-type(8):before { content: "Impressions / Clicks"; }
+	table.resp-table td:nth-of-type(9):before { content: "CPM"; }
+	table.resp-table td:nth-of-type(10):before { content: "Spent"; }
 }

@@ -1,6 +1,8 @@
 /* Fonts */
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700);
 
+p, tr, td, th, li, ol { font-family: 'Open Sans', sans-serif; }
+
 .dash-title, .stats ul li {
 	font-family: 'Open Sans', sans-serif;
 }
@@ -20,9 +22,6 @@ a.logo {
 	border-top: solid 5px #1e64b4;
 	box-shadow: 0 0 5px 2px #9c9c9c;
 	padding: 15px 0;
-}
-.sidebar {
-	margin-top: 86px;
 }
 
 .border-box {
@@ -48,13 +47,46 @@ body, #page-wrapper {
 
 #side-menu li .fa {
 	color: #11498a;
-	font-size: 32px !important;
+	font-size: 32px;
+}
+#side-menu .sbtxt {
+	position: relative;
+	bottom: 5px;
+}
+.sidebar-search i.fa.fa-search {
+	font-size: 15px !important;
 }
 
 .sidebar .nav-second-level li a {
 	padding-left: 70px;
 }
 
+/* Buttons, Forms & Elements */
+div#bar-campaign {
+	padding-bottom: 5px !important;
+}
+#bar-campaign .btn, #bar-campaign input, #bar-campaign select {
+	font-size: 11px;
+	margin-bottom: 10px;
+}
+#bar-campaign button.btn.btn-default,
+#bar-campaign button.btn.btn-primary {
+	height: 34px;
+	width: 100%;
+}
+#bar-campaign .date-picker { 
+	display: inline-block;
+	width: 80%; 
+}
+#bar-campaign .form-group {
+	margin-bottom: 0px;
+}
+i.date-refresh {
+	color: #26aefb;
+	font-size: 20px;
+	top: 5px;
+	position: relative;
+}
 
 /* Dashboard Stats */
 .dash-title {
@@ -85,5 +117,40 @@ body, #page-wrapper {
 	font-size: 13px;
 	display: block;
 	clear: both;
+}
+
+/* Footer */
+#footer {
+	width: 100%;
+	background: #565b61;
+	margin: 18px 0px;
+	padding: 15px 0px;
+	height: auto;
+}
+.foot_link {
+	width: 100%;
+	text-align: center;
+	margin: 0px;
+	padding: 0px;
+	float: left;
+}
+.foot_link ul {
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+}
+.foot_link ul li {
+	list-style: none;
+	display: inline-block;
+	font-size: 15px;
+	margin: 0 6px;
+}
+.foot_link ul li a {
+	text-decoration: none;
+	color: #fbfeff;
+}
+.foot_link ul li a:hover {
+	text-decoration: none;
+	color: #00a2ff;
 }
 
