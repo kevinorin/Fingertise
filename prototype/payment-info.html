@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Fingertise - Advertiser Dashboard</title>
+    <title>Fingertise - Payment Details</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -89,13 +89,13 @@
                             <!-- /input-group -->
                         </li>
                         <li>
-                            <a class="active" href="index.html"><i class="fa fa-dashboard fa-fw"></i> <span class="sbtxt">Dashboard</span></a>
+                            <a href="index.html"><i class="fa fa-dashboard fa-fw"></i> <span class="sbtxt">Dashboard</span></a>
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-money fa-fw"></i> <span class="sbtxt">Payments</span> <span class="fa arrow"></span></a>
+                            <a class="active" href="#"><i class="fa fa-money fa-fw"></i> <span class="sbtxt">Payments</span> <span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="#">Payment Info</a>
+                                    <a class="active" href="#">Payment Info</a>
                                 </li>
                                 <li>
                                     <a href="#">Payment History</a>
@@ -122,17 +122,14 @@
         <div id="page-wrapper">
             <div class="row blue-box border-box">
                 <div class="col-lg-12">
-                    <h1 class="dash-title"><i class="fa fa-dashboard"></i> Advertiser Dashboard</h1>
+                    <h1 class="dash-title"><i class="fa fa-money"></i> Payment Details</h1>
                   <div class="stats">
                      <ul>
-                        <li>0
-                           <p>Campaigns</p>
+                        <li>132,510
+                           <p>Applications</p>
                         </li>
                         <li>$0.00
-                           <p>A/C Balance</p>
-                        </li>
-                        <li>$0.00
-                           <p>Spent</p>
+                           <p>From 0 impressions</p>
                         </li>
                      </ul>
                   </div>
@@ -141,122 +138,79 @@
             </div>
             <!-- /.row -->
 
-            <!-- New Campaign Bar -->
+            <!-- Payment Details Bar -->
             <div id="bar-details" class="row gray-box border-box">
-               <div class="col-lg-2 col-md-4">
-                  <button type="button" class="btn btn-primary">New Campaign <i class="fa fa-plus"></i></button>
-               </div>
-               <div class="col-lg-2 col-md-4">
-                  <div class="form-group input-group">
-                     <input type="text" class="form-control" placeholder="Search text">
-                     <span class="input-group-btn">
-                        <button class="btn btn-default" type="button"><i class="fa fa-search"></i></button>
-                     </span>
-                  </div>
+               <div class="col-lg-3 col-md-4">
+                  <p>Pending Earnings <span class="blue-txt">$0.00</span></p>
                </div>
                <div class="col-lg-3 col-md-4">
-                  <select class="form-control">
-                     <option>Active Campaigns</option>
-                     <option>Other</option>
-                     <option>Other</option>
-                  </select>
+                  <p>Paid Earnings <span class="blue-txt">$0.00</span></p>
                </div>
-               <div class="col-lg-2 col-md-6">
-                  <select class="form-control">
-                     <option>All</option>
-                     <option>Other</option>
-                  </select>
-               </div>
-               <div class="col-lg-3 col-md-6">
-                  <input class="form-control date-picker" placeholder="June 02, 2014 - July 02, 2014"> <i class="fa fa-refresh date-refresh"></i>
+               <div class="col-lg-6 col-md-4">
+                  <p>Next Payment Date <span class="blue-txt">31-Dec-2014</span></p>
                </div>
             </div>
             <!-- /New Campaign Bar -->
 
-            <div class="row gray-box border-box">
-                <div class="col-lg-12 col-md-12">
-                    
-                    <table class="resp-table">
-                        <thead>
-                           <tr>
-                              <th>CHECKBOX</th>
-                              <th><i class="fa fa-gear"></i></th>
-                              <th>Campaign Name</th>
-                              <th>APP ID</th>
-                              <th>Ad Type <i span class="fa fa-info"></i></th>
-                              <th>Status</th>
-                              <th>Daily Budget</th>
-                              <th>Impressions / Clicks</th>
-                              <th>CPM</th>
-                              <th>Spent</th>
-                           </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                              <td><input type="checkbox" value=""></td>
-                              <td>#</td>
-                              <td>thedroidmarket</td>
-                              <td>012456</td>
-                              <td>ad</td>
-                              <td>Enabled</td>
-                              <td>-</td>
-                              <td>0</td>
-                              <td>$0.00</td>
-                              <td>$0.00</td>
-                          </tr>
-                          <tr>
-                              <td><input type="checkbox" value=""></td>
-                              <td>#</td>
-                              <td>thedroidmarket</td>
-                              <td>012456</td>
-                              <td>ad</td>
-                              <td>Enabled</td>
-                              <td>-</td>
-                              <td>0</td>
-                              <td>$0.00</td>
-                              <td>$0.00</td>
-                          </tr>
-                          <tr>
-                              <td><input type="checkbox" value=""></td>
-                              <td>#</td>
-                              <td>thedroidmarket</td>
-                              <td>012456</td>
-                              <td>ad</td>
-                              <td>Enabled</td>
-                              <td>-</td>
-                              <td>0</td>
-                              <td>$0.00</td>
-                              <td>$0.00</td>
-                          </tr>
-                          <tr>
-                              <td><input type="checkbox" value=""></td>
-                              <td>#</td>
-                              <td>thedroidmarket</td>
-                              <td>012456</td>
-                              <td>ad</td>
-                              <td>Enabled</td>
-                              <td>-</td>
-                              <td>0</td>
-                              <td>$0.00</td>
-                              <td>$0.00</td>
-                          </tr>
-                        </tbody>
-                     </table>
-
-                     <table class="totals">
-                        <tbody>
-                          <tr>
-                              <td>Account Total and Averages</td>
-                              <td>Total Daily Budgets: 0</td>
-                              <td>Total Imp/Clicks</td>
-                              <td>Total CPM: $0.00</td>
-                              <td>Total Spent: $0.00</td>
-                          </tr>
-                       </tobdy>
-                    </table>
-                            
+            <div class="row">
+              <div class="col-lg-8 col-md-8 gray-box border-box panel panel-default">
+                <div class="panel-heading">
+                  Tax Information
                 </div>
-                <!-- /.col-lg-4 -->
+                <!-- row -->
+                <div class="panel-body">
+                  <div class="col-lg-3 col-md-4 col-xs-4">
+                    <label>Country: <span class="text-danger">*</span></label>
+                  </div>
+                  <div class="col-lg-9 col-md-8 col-xs-8">
+                    <select class="form-control">
+                      <option>Select Country</option>
+                      <option>United States</option>
+                    </select>
+                  </div>
+                </div>
+                <!-- /row -->
+                <!-- row -->
+                <div class="panel-body">
+                  <div class="col-lg-3 col-md-4 col-xs-4">
+                    <label>Account Type: <span class="text-danger">*</span></label>
+                  </div>
+                  <div class="col-lg-9 col-md-8 col-xs-8">
+                    <select class="form-control">
+                      <option>Select Account Type</option>
+                      <option>Type 1</option>
+                    </select>
+                  </div>
+                </div>
+                <!-- /row -->
+                <!-- row -->
+                <div class="panel-body">
+                  <div class="col-lg-3 col-md-4 col-xs-4">
+                    <label>Business Name: <span class="text-danger">*</span></label>
+                  </div>
+                  <div class="col-lg-9 col-md-8 col-xs-8">
+                    <input class="form-control" placeholder="Google Inc.">
+                  </div>
+                </div>
+                <!-- /row -->
+              </div>
+
+                <div class="col-lg-4 col-md-4">
+                  <div class="help_info gradient-blue gray-box border-box right-sidebar">
+                    <span class="title_lifesaver fa fa-life-buoy"></span>
+                    <p>Fingertize is required to collect tax information from all its developers - you are responsible for keeping it up to date. You can change your tax information at any time. NOTE: Any changes made in your payment section between 15th till end of month will be not be considered for current pay cycle. For any payment related query please write to us: <a href="mailto:support@fingertize.com">support@fingertize.com</a></p>
+                  </div>
+
+                  <div class="help_info gradient-yellow gray-box border-box right-sidebar">
+                    <span class="title_lifesaver fa fa-life-buoy"></span>
+                    <p>The minimum earnings to qualify for weekly payment is $300/week in case of Bundled SDK and $600/week in case of Standard Pub SDK. The user after reaching the minimum set earnings will be included in an approval period of 30 days, the user has to qualify for the weekly during these 4 weeks, after which the user will be paid on Net 7 basis thereafter. Until such time, the user will be paid on Net 30 basis. Tax Information</p>
+                  </div>
+
+                  <div class="help_info gray-box border-box right-sidebar">
+                    <h3 class="title_lifesaver"><i class="fa fa-thumbs-up"></i> Important Information</h3> 
+                    <p>As a developer, it is your duty to make sure that you have entered your tax-related information correctly. Choose your country of residence and your account type. Account type refers to whether you are registering with Fingertize as an individual or a part of your organisation. Enter your registered business name. Business address details and Depending on your country, respective local TAX ID. Choose the payment details. Currently, Fingertize makes payments via ACH,Wire and Paypal transfer. Enter the respective details and click 'Submit' for the information to be stored.</p>
+                  </div>
+                </div>
             </div>
             <!-- /.row -->
         </div>
