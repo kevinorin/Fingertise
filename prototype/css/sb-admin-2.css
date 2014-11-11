@@ -98,8 +98,12 @@ body {
     border-bottom: 1px solid #e7e7e7;
 }
 
-.sidebar ul li a.active {
-    background-color: #eee;
+.sidebar ul li a.active, 
+.sidebar ul li a.active .fa, 
+.sidebar ul li a:hover, 
+.sidebar ul li a:hover .fa {
+    background-color: #1472c4;
+    color: #ffffff !important;
 }
 
 .sidebar .arrow {
