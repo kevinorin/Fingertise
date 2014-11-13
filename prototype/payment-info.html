@@ -82,25 +82,25 @@
                          <div class="input-group custom-search-form">
                              <input type="text" class="form-control" placeholder="Search...">
                              <span class="input-group-btn">
-                             <button class="btn btn-default" type="button">
-                                 <i class="fa fa-search"></i>
-                             </button>
-                         </span>
+                                <button class="btn btn-default" type="button">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </span>
                          </div>
                          <!-- /input-group -->
                      </li>
                      <li>
                          <a href="ad-dashboard.html"><i class="fa fa-dashboard fa-fw"></i> <span class="sbtxt">Dashboard</span></a>
                      </li>
-                     <li>
-                        <a class="active" href="#"><i class="fa fa-money fa-fw"></i> <span class="sbtxt">Payments</span> <span class="fa arrow"></span></a>
+                     <li class="active">
+                        <a href="#"><i class="fa fa-money fa-fw"></i> <span class="sbtxt">Payments</span> <span class="fa arrow"></span></a>
                         <!-- /nav-second-lvl -->
                         <ul class="nav nav-second-level">
                           <li>
-                              <a class="active" href="payment-info.html">Payment Info</a>
+                              <a class="active" href="payment-info.html"><i class="fa fa-money fa-fw"></i> Payment Info</a>
                           </li>
                           <li>
-                              <a href="#">Payment History</a>
+                              <a href="#"><i class="fa fa-money fa-fw"></i> Payment History</a>
                           </li>
                         </ul>
                         <!-- nav-second-lvl -->
@@ -108,7 +108,7 @@
                      <li>
                         <a href="#"><i class="fa fa-area-chart fa-fw"></i> <span class="sbtxt">Reports</span> <span class="fa arrow"></span></a>
                         <!-- /nav-second-lvl -->
-                        <ul class="nav nav-second-level collapse">
+                        <ul class="nav nav-second-level">
                           <li>
                               <a href="#"><i class="fa fa-area-chart"></i> Charts</a>
                           </li>
@@ -125,10 +125,20 @@
                         <!-- nav-second-lvl -->
                      </li>
                      <li>
-                         <a href="#"><i class="fa fa-life-bouy fa-fw"></i> <span class="sbtxt">Helpdesk</span></a>
+                        <a href="#"><i class="fa fa-life-bouy fa-fw"></i> <span class="sbtxt">Helpdesk</span> <span class="fa arrow"></span></a>
+                        <!-- /nav-second-lvl -->
+                        <ul class="nav nav-second-level">
+                          <li>
+                              <a href="#"><i class="fa fa-area-chart"></i> Support Ticket</a>
+                          </li>
+                          <li>
+                              <a href="#"><i class="fa fa-area-chart"></i> Live Support</a>
+                          </li>
+                       </ul>
+                       <!-- /nav-second-lvl -->
                      </li>
                      <li>
-                         <a href="#"><i class="fa fa-wrench fa-fw"></i> <span class="sbtxt">API</span> <span class="fa arrow"></span></a>
+                         <a href="#"><i class="fa fa-wrench fa-fw"></i> <span class="sbtxt">API</span></a>
                      </li>
                  </ul>
              </div>
@@ -328,15 +338,7 @@
    <script src="js/bootstrap.min.js"></script>
 
    <!-- Metis Menu Plugin JavaScript -->
-   <script src="js/plugins/metisMenu/metisMenu.min.js"></script>
-
-   <!-- Flot Charts JavaScript -->
-   <script src="js/plugins/flot/excanvas.min.js"></script>
-   <script src="js/plugins/flot/jquery.flot.js"></script>
-   <script src="js/plugins/flot/jquery.flot.pie.js"></script>
-   <script src="js/plugins/flot/jquery.flot.resize.js"></script>
-   <script src="js/plugins/flot/jquery.flot.tooltip.min.js"></script>
-   <script src="js/plugins/flot/flot-data.js"></script>
+   <script src="js/plugins/metisMenu/metisMenu.js"></script>
 
    <!-- Custom Theme JavaScript -->
    <script src="js/sb-admin-2.js"></script>
