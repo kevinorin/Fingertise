@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	 <meta charset="utf-8">
+	 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+	 <meta name="description" content="">
+	 <meta name="author" content="">
+
+	 <title>Fingertise - Reports - Charts</title>
+
+	 <!-- Bootstrap Core CSS -->
+	 <link href="css/bootstrap.min.css" rel="stylesheet">
+
+	 <!-- MetisMenu CSS -->
+	 <link href="css/plugins/metisMenu/metisMenu.min.css" rel="stylesheet">
+
+	 <!-- Timeline CSS -->
+	 <link href="css/plugins/timeline.css" rel="stylesheet">
+
+	 <!-- Custom CSS -->
+	 <link href="css/sb-admin-2.css" rel="stylesheet">
+	 <link href="css/ft-styles.css" rel="stylesheet">
+
+	 <!-- Morris Charts CSS -->
+	 <link href="css/responsive-tables.css" rel="stylesheet">
+
+	 <!-- Custom Fonts -->
+	 <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+	 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	 <!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	 <![endif]-->
+
+</head>
+
+<body>
+	 <div id="wrapper">
+
+		  <!-- Navigation -->
+		  <nav class="header navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+				<div class="navbar-header">
+					 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						  <span class="sr-only">Toggle navigation</span>
+						  <span class="icon-bar"></span>
+						  <span class="icon-bar"></span>
+						  <span class="icon-bar"></span>
+					 </button>
+					 <a href="#" class="logo"><img src="../assets/images/logo.jpg" alt="Fingertise"></a>
+				</div>
+				<!-- /.navbar-header -->
+
+				<ul class="nav navbar-top-links navbar-right">
+					 <li class="dropdown">
+						  <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+								<i class="fa fa-user fa-fw"></i> Welcome : Avery Swallows <i class="fa fa-caret-down"></i>
+						  </a>
+						  <ul class="dropdown-menu dropdown-user">
+								<li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
+								</li>
+								<li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
+								</li>
+								<li class="divider"></li>
+								<li><a href="#"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+								</li>
+						  </ul>
+						  <!-- /.dropdown-user -->
+					 </li>
+					 <!-- /.dropdown -->
+				</ul>
+				<!-- /.navbar-top-links -->
+
+				<!-- Main Sidebar Nav -->
+			<div class="navbar-default sidebar" role="navigation">
+				 <div class="sidebar-nav navbar-collapse">
+					  <ul class="nav" id="side-menu">
+							<li class="sidebar-search">
+								 <div class="input-group custom-search-form">
+									  <input type="text" class="form-control" placeholder="Search...">
+									  <span class="input-group-btn">
+									  <button class="btn btn-default" type="button">
+											<i class="fa fa-search"></i>
+									  </button>
+								 </span>
+								 </div>
+								 <!-- /input-group -->
+							</li>
+							<li>
+								 <a href="ad-dashboard.html"><i class="fa fa-dashboard fa-fw"></i> <span class="sbtxt">Dashboard</span></a>
+							</li>
+							<li>
+								<a href="#"><i class="fa fa-money fa-fw"></i> <span class="sbtxt">Payments</span> <span class="fa arrow"></span></a>
+								<!-- /nav-second-lvl -->
+								<ul class="nav nav-second-level">
+								  <li>
+										<a href="payment-info.html"><i class="fa fa-money fa-fw"></i> Payment Info</a>
+								  </li>
+								  <li>
+										<a href="#"><i class="fa fa-money fa-fw"></i> Payment History</a>
+								  </li>
+								</ul>
+								<!-- nav-second-lvl -->
+							</li>
+							<li class="active">
+								<a href="#"><i class="fa fa-area-chart fa-fw"></i> <span class="sbtxt">Reports</span> <span class="fa arrow"></span></a>
+								<!-- /nav-second-lvl -->
+								<ul class="nav nav-second-level">
+								  <li>
+										<a class="active" href="reports-charts.html"><i class="fa fa-area-chart"></i> Charts</a>
+								  </li>
+								  <li>
+										<a href="reports-custom.html"><i class="fa fa-area-chart"></i>Custom Reports</a>
+								  </li>
+								  <li>
+										<a href="reports-history.html"><i class="fa fa-area-chart"></i>Report History</a>
+								  </li>
+								  <li>
+										<a href="reports-change-history.html"><i class="fa fa-area-chart"></i>Change History</a>
+								  </li>
+								</ul>
+								<!-- nav-second-lvl -->
+							</li>
+							<li>
+								<a href="#"><i class="fa fa-life-bouy fa-fw"></i> <span class="sbtxt">Helpdesk</span> <span class="fa arrow"></span></a>
+								<!-- /nav-second-lvl -->
+								<ul class="nav nav-second-level">
+								  <li>
+										<a href="#"><i class="fa fa-area-chart"></i> Support Ticket</a>
+								  </li>
+								  <li>
+										<a href="#"><i class="fa fa-area-chart"></i> Live Support</a>
+								  </li>
+							  </ul>
+							  <!-- /nav-second-lvl -->
+							</li>
+							<li>
+								 <a href="#"><i class="fa fa-wrench fa-fw"></i> <span class="sbtxt">API</span></a>
+							</li>
+					  </ul>
+				 </div>
+				 <!-- /.sidebar-collapse -->
+			</div>
+			<!-- Main Sidebar Nav -->
+		  </nav>
+
+		  <div id="page-wrapper">
+				<div class="row blue-box border-box">
+					 <div class="col-lg-12">
+						  <h1 class="dash-title"><i class="fa fa-dashboard"></i> Reports - Charts</h1>
+						<div class="stats">
+							<ul>
+								<li>132,510 <p>Applications</p>
+								</li>
+								<li>$0.00 <p>From 0 Impressions</p>
+								</li>
+							</ul>
+						</div>
+					 </div>
+					 <!-- /.col-lg-12 -->
+				</div>
+				<!-- /.row -->
+
+				<!-- New Campaign Bar -->
+				<div id="bar-details" class="row gray-box border-box">
+					<div class="col-lg-4 col-md-4">
+						<select class="form-control">
+							<option>Select Ad Platform</option>
+							<option>Small Wall Ads</option>
+							<option>Other</option>
+						</select>
+					</div>
+					<div class="col-lg-4 col-md-4">
+						<select class="form-control">
+							<option>Select Application</option>
+							<option>All Applications</option>
+						</select>
+					</div>
+					<div class="col-lg-4 col-md-4">
+						<select class="form-control">
+							<option>Date Range</option>
+							<option>June 02, 2014 - July 02, 2014</option>
+							<option>July 02, 2014 - August 02, 2014</option>
+						</select>
+					</div>
+				</div>
+				<!-- /New Campaign Bar -->
+
+				<div class="row gray-box border-box">
+					<div class="col-lg-12 col-md-12">
+						<div class="panel panel-default">
+                     <!-- /.panel-heading -->
+                     <div class="panel-body">
+                         <!-- Nav tabs -->
+                         <ul class="nav nav-tabs">
+                             <li class="active"><a href="#home" data-toggle="tab" aria-expanded="true">New Installs 0</a>
+                             </li>
+                             <li class=""><a href="#profile" data-toggle="tab" aria-expanded="false">Impressions 0</a>
+                             </li>
+                             <li class=""><a href="#messages" data-toggle="tab" aria-expanded="false">CPMs $0</a>
+                             </li>
+                             <li class=""><a href="#settings" data-toggle="tab" aria-expanded="false">Earnings $0.00</a>
+                             </li>
+                         </ul>
+
+                         <!-- Tab panes -->
+                         <div class="tab-content">
+                             <div class="tab-pane fade active in" id="home">
+                             		<div class="alert alert-info">New Installs for All Application of type Push Notification Ads from May 30, 2014 to June 05, 2014 : 0
+                            		</div>
+                            		<!-- chart -->
+                            		<div id="morris-area-chart" style="position: relative; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><svg height="427" version="1.1" width="807" xmlns="http://www.w3.org/2000/svg" style="overflow: hidden; position: relative;"><desc style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Created with RaphaÃ«l 2.1.2</desc><defs style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></defs><text x="49.21875" y="392.984375" text-anchor="end" font="10px &quot;Arial&quot;" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: sans-serif;" font-size="12px" font-family="sans-serif" font-weight="normal"><tspan dy="4.1640625" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">0</tspan></text><path fill="none" stroke="#aaaaaa" d="M61.71875,392.984375H782" stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text x="49.21875" y="300.98828125" text-anchor="end" font="10px &quot;Arial&quot;" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: sans-serif;" font-size="12px" font-family="sans-serif" font-weight="normal"><tspan dy="4.16015625" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">7,500</tspan></text><path fill="none" stroke="#aaaaaa" d="M61.71875,300.98828125H782" stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text x="49.21875" y="208.9921875" text-anchor="end" font="10px &quot;Arial&quot;" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: sans-serif;" font-size="12px" font-family="sans-serif" font-weight="normal"><tspan dy="4.15625" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">15,000</tspan></text><path fill="none" stroke="#aaaaaa" d="M61.71875,208.9921875H782" stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text x="49.21875" y="116.99609375" text-anchor="end" font="10px &quot;Arial&quot;" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: sans-serif;" font-size="12px" font-family="sans-serif" font-weight="normal"><tspan dy="4.16015625" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">22,500</tspan></text><path fill="none" stroke="#aaaaaa" d="M61.71875,116.99609375H782" stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text x="49.21875" y="25" text-anchor="end" font="10px &quot;Arial&quot;" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: sans-serif;" font-size="12px" font-family="sans-serif" font-weight="normal"><tspan dy="4.1640625" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">30,000</tspan></text><path fill="none" stroke="#aaaaaa" d="M61.71875,25H782" stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text x="648.971142162819" y="405.484375" text-anchor="middle" font="10px &quot;Arial&quot;" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: sans-serif;" font-size="12px" font-family="sans-serif" font-weight="normal" transform="matrix(1,0,0,1,0,7.0078)"><tspan dy="4.1640625" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">2012</tspan></text><text x="329.52684538274605" y="405.484375" text-anchor="middle" font="10px &quot;Arial&quot;" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: sans-serif;" font-size="12px" font-family="sans-serif" font-weight="normal" transform="matrix(1,0,0,1,0,7.0078)"><tspan dy="4.1640625" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">2011</tspan></text><path fill="#7cb47c" stroke="none" d="M61.71875,327.8143421875C81.84811664641555,321.0679619791667,122.10684993924667,307.06768977864584,142.23621658566222,300.8288213541667C162.36558323207777,294.5899529296875,202.6243165249089,286.44411775387067,222.75368317132444,277.90339479166664C242.664252354192,269.45550577470397,282.48539071992707,235.39511723282112,302.39595990279463,232.8743734375C322.08773162211423,230.38133012344613,361.4712750607533,256.01489562872024,381.16304678007293,257.8482463541667C401.29241342648845,259.7223382068453,441.5511467193196,246.45606341145833,461.6805133657351,247.70414375C481.8098800121507,248.95222408854164,522.0686133049819,289.9878944216758,542.1979799513974,267.8328890625C562.108549134265,245.91869897896746,601.9296875,82.11730807291667,621.8402566828676,71.42736197916668C641.7508258657351,60.73741588541667,681.5719642314702,166.63897893969147,701.4825334143378,182.3133203125C721.6119000607533,198.1599071948998,761.8706333535845,193.711636328125,782,197.511075L782,392.984375L61.71875,392.984375Z" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></path><path fill="none" stroke="#4da74d" d="M61.71875,327.8143421875C81.84811664641555,321.0679619791667,122.10684993924667,307.06768977864584,142.23621658566222,300.8288213541667C162.36558323207777,294.5899529296875,202.6243165249089,286.44411775387067,222.75368317132444,277.90339479166664C242.664252354192,269.45550577470397,282.48539071992707,235.39511723282112,302.39595990279463,232.8743734375C322.08773162211423,230.38133012344613,361.4712750607533,256.01489562872024,381.16304678007293,257.8482463541667C401.29241342648845,259.7223382068453,441.5511467193196,246.45606341145833,461.6805133657351,247.70414375C481.8098800121507,248.95222408854164,522.0686133049819,289.9878944216758,542.1979799513974,267.8328890625C562.108549134265,245.91869897896746,601.9296875,82.11730807291667,621.8402566828676,71.42736197916668C641.7508258657351,60.73741588541667,681.5719642314702,166.63897893969147,701.4825334143378,182.3133203125C721.6119000607533,198.1599071948998,761.8706333535845,193.711636328125,782,197.511075" stroke-width="3" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><circle cx="61.71875" cy="327.8143421875" r="2" fill="#4da74d" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="142.23621658566222" cy="300.8288213541667" r="5" fill="#4da74d" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="222.75368317132444" cy="277.90339479166664" r="2" fill="#4da74d" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="302.39595990279463" cy="232.8743734375" r="2" fill="#4da74d" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="381.16304678007293" cy="257.8482463541667" r="2" fill="#4da74d" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="461.6805133657351" cy="247.70414375" r="2" fill="#4da74d" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="542.1979799513974" cy="267.8328890625" r="2" fill="#4da74d" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="621.8402566828676" cy="71.42736197916668" r="2" fill="#4da74d" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="701.4825334143378" cy="182.3133203125" r="2" fill="#4da74d" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="782" cy="197.511075" r="2" fill="#4da74d" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><path fill="#a7b3bc" stroke="none" d="M61.71875,360.28283020833334C81.84811664641555,352.9047434895833,122.10684993924667,337.23320891927085,142.23621658566222,330.77048333333335C162.36558323207777,324.30775774739584,202.6243165249089,312.11447985826504,222.75368317132444,308.58102552083335C242.664252354192,305.0859782957651,282.48539071992707,305.49790265812044,302.39595990279463,302.65647708333336C322.08773162211423,299.8462759654121,361.4712750607533,289.9156920630151,381.16304678007293,285.97451875C401.29241342648845,281.94576380780677,441.5511467193196,270.6096378255208,461.6805133657351,270.7767640625C481.8098800121507,270.94389029947916,522.0686133049819,304.38834963000915,542.1979799513974,287.31152864583333C562.108549134265,270.4203252810508,601.9296875,144.91997473958335,621.8402566828676,134.90466666666669C641.7508258657351,124.88935859375002,681.5719642314702,196.67494948272426,701.4825334143378,207.1890640625C721.6119000607533,217.8187183629326,761.8706333535845,216.40707265625,782,219.4797421875L782,392.984375L61.71875,392.984375Z" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></path><path fill="none" stroke="#7a92a3" d="M61.71875,360.28283020833334C81.84811664641555,352.9047434895833,122.10684993924667,337.23320891927085,142.23621658566222,330.77048333333335C162.36558323207777,324.30775774739584,202.6243165249089,312.11447985826504,222.75368317132444,308.58102552083335C242.664252354192,305.0859782957651,282.48539071992707,305.49790265812044,302.39595990279463,302.65647708333336C322.08773162211423,299.8462759654121,361.4712750607533,289.9156920630151,381.16304678007293,285.97451875C401.29241342648845,281.94576380780677,441.5511467193196,270.6096378255208,461.6805133657351,270.7767640625C481.8098800121507,270.94389029947916,522.0686133049819,304.38834963000915,542.1979799513974,287.31152864583333C562.108549134265,270.4203252810508,601.9296875,144.91997473958335,621.8402566828676,134.90466666666669C641.7508258657351,124.88935859375002,681.5719642314702,196.67494948272426,701.4825334143378,207.1890640625C721.6119000607533,217.8187183629326,761.8706333535845,216.40707265625,782,219.4797421875" stroke-width="3" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><circle cx="61.71875" cy="360.28283020833334" r="2" fill="#7a92a3" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="142.23621658566222" cy="330.77048333333335" r="5" fill="#7a92a3" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="222.75368317132444" cy="308.58102552083335" r="2" fill="#7a92a3" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="302.39595990279463" cy="302.65647708333336" r="2" fill="#7a92a3" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="381.16304678007293" cy="285.97451875" r="2" fill="#7a92a3" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="461.6805133657351" cy="270.7767640625" r="2" fill="#7a92a3" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="542.1979799513974" cy="287.31152864583333" r="2" fill="#7a92a3" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="621.8402566828676" cy="134.90466666666669" r="2" fill="#7a92a3" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="701.4825334143378" cy="207.1890640625" r="2" fill="#7a92a3" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="782" cy="219.4797421875" r="2" fill="#7a92a3" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><path fill="#2577b5" stroke="none" d="M61.71875,360.28283020833334C81.84811664641555,359.939378125,122.10684993924667,362.35274231770836,142.23621658566222,358.909021875C162.36558323207777,355.46530143229165,202.6243165249089,334.2577552965619,222.75368317132444,332.7330666666667C242.664252354192,331.2249507392703,282.48539071992707,349.70402488345997,302.39595990279463,346.77780364583333C322.08773162211423,343.8837386855433,361.4712750607533,312.337667475103,381.16304678007293,309.451921875C401.29241342648845,306.5020485948947,441.5511467193196,320.3841243489583,461.6805133657351,323.435328125C481.8098800121507,326.4865319010417,522.0686133049819,348.357656417919,542.1979799513974,333.8615520833333C562.108549134265,319.5230141002106,601.9296875,217.0924435546875,621.8402566828676,208.09675885416667C641.7508258657351,199.10107415364584,681.5719642314702,251.76928188681123,701.4825334143378,261.89607447916666C721.6119000607533,272.1341505066029,761.8706333535845,282.6411936197917,782,289.55623333333335L782,392.984375L61.71875,392.984375Z" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></path><path fill="none" stroke="#0b62a4" d="M61.71875,360.28283020833334C81.84811664641555,359.939378125,122.10684993924667,362.35274231770836,142.23621658566222,358.909021875C162.36558323207777,355.46530143229165,202.6243165249089,334.2577552965619,222.75368317132444,332.7330666666667C242.664252354192,331.2249507392703,282.48539071992707,349.70402488345997,302.39595990279463,346.77780364583333C322.08773162211423,343.8837386855433,361.4712750607533,312.337667475103,381.16304678007293,309.451921875C401.29241342648845,306.5020485948947,441.5511467193196,320.3841243489583,461.6805133657351,323.435328125C481.8098800121507,326.4865319010417,522.0686133049819,348.357656417919,542.1979799513974,333.8615520833333C562.108549134265,319.5230141002106,601.9296875,217.0924435546875,621.8402566828676,208.09675885416667C641.7508258657351,199.10107415364584,681.5719642314702,251.76928188681123,701.4825334143378,261.89607447916666C721.6119000607533,272.1341505066029,761.8706333535845,282.6411936197917,782,289.55623333333335" stroke-width="3" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><circle cx="61.71875" cy="360.28283020833334" r="2" fill="#0b62a4" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="142.23621658566222" cy="358.909021875" r="5" fill="#0b62a4" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="222.75368317132444" cy="332.7330666666667" r="2" fill="#0b62a4" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="302.39595990279463" cy="346.77780364583333" r="2" fill="#0b62a4" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="381.16304678007293" cy="309.451921875" r="2" fill="#0b62a4" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="461.6805133657351" cy="323.435328125" r="2" fill="#0b62a4" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="542.1979799513974" cy="333.8615520833333" r="2" fill="#0b62a4" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="621.8402566828676" cy="208.09675885416667" r="2" fill="#0b62a4" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="701.4825334143378" cy="261.89607447916666" r="2" fill="#0b62a4" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="782" cy="289.55623333333335" r="2" fill="#0b62a4" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle></svg><div class="morris-hover morris-default-style" style="left: 85.2362165856622px; top: 254px; display: block;"><div class="morris-hover-row-label">2014 Q3</div><div class="morris-hover-point" style="color: #0b62a4">
+											  Installs 1:
+											  2,778
+											</div><div class="morris-hover-point" style="color: #7A92A3">
+											  Installs 2:
+											  2,294
+											</div><div class="morris-hover-point" style="color: #4da74d">
+											  Installs 3:
+											  2,441
+											</div></div></div>
+                            		<!-- /chart -->
+                             </div>
+                             <div class="tab-pane fade" id="profile">
+                                 <div class="alert alert-warning alert-chart">Loading Chart, Please Wait.
+                            		</div>
+                             </div>
+                             <div class="tab-pane fade" id="messages">
+                                 <div class="alert alert-warning alert-chart">Loading Chart, Please Wait.
+                            		</div>
+                             </div>
+                             <div class="tab-pane fade" id="settings">
+                                 <div class="alert alert-warning alert-chart">Loading Chart, Please Wait.
+                            		</div>
+                             </div>
+                         </div>
+                     </div>
+                     <!-- /.panel-body -->
+              		</div>	 
+					</div>
+				</div>
+				<!-- /.row -->
+		  </div>
+		  <!-- /#page-wrapper -->
+
+	 </div>
+	 <!-- /#wrapper -->
+
+	<footer>
+	  <div id="footer">
+					<div class="container">
+			<div class="foot_link">
+						 <ul>
+				 <li><a href="#">Home</a></li>
+				 <li><a href="#">FAQ</a></li>
+				 <li><a href="#">Privacy Policy</a></li>
+				 <li><a href="#">App Policy</a></li>
+				 <li><a href="#">Opt Out</a></li>
+				 <li><a href="#">Contact Us</a></li>
+				 <li><a href="#">About</a></li>
+				 <li><a href="#">Blog</a></li>
+				 <li><a href="#">Support</a></li>
+			  </ul>
+					  </div>
+		 </div>
+				 </div>
+	</footer>
+
+	 <!-- jQuery -->
+	<script src="js/jquery.js"></script>
+
+	<!-- Bootstrap Core JavaScript -->
+	<script src="js/bootstrap.min.js"></script>
+
+	<!-- Metis Menu Plugin JavaScript -->
+	<script src="js/plugins/metisMenu/metisMenu.js"></script>
+
+	<!-- Custom Theme JavaScript -->
+	<script src="js/sb-admin-2.js"></script>
+
+</body>
+
+</html>

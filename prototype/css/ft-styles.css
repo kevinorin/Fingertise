@@ -137,14 +137,22 @@ body, #page-wrapper {
 }
 
 /* Buttons, Forms & Elements */
-.alert.alert-info {text-align:center;}
-div#bar-details {
-	padding-bottom: 5px !important;
-	padding-top: 5px !important;
+.alert.alert-info,
+.alert-success {
+	text-align:center;
+}
+.input-inline {
+	display:inline-block;
+	width:55%;
+}
+#bar-details {
+	padding: 0;
+}
+#bar-details > * {
+	margin: 10px 0;
 }
 #bar-details .btn, #bar-details input, #bar-details select {
 	font-size: 11px;
-	margin-bottom: 10px;
 }
 #bar-details button.btn.btn-default,
 #bar-details button.btn.btn-primary {
@@ -158,11 +166,26 @@ div#bar-details {
 #bar-details .form-group {
 	margin-bottom: 0px;
 }
+#bar-details p {margin:0;}
 i.date-refresh {
 	color: #26aefb;
 	font-size: 20px;
 	top: 5px;
 	position: relative;
+}
+
+/* Nav Tabs */
+.tab-content {
+	border-left:1px solid #ddd;
+	border-right:1px solid #ddd;
+	border-bottom:1px solid #ddd;
+	padding: 10px !important;
+}
+.nav-tabs li a {
+	background: #e6e6e6;
+}
+.nav-tabs > li > a:hover {
+	background: #ffffff;
 }
 
 /* Dashboard Stats */
