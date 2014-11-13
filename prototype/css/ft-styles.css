@@ -15,12 +15,15 @@ a:hover {color:#11498a; }
 a.logo {
 	margin-left:10px;
 }
+
+/* Header & Nav */
 .header.navbar {
 	border-top: solid 5px #1e64b4;
 	box-shadow: 0 0 5px 2px #9c9c9c;
 	padding: 15px 0;
 }
 
+/* Styled Boxes */
 .border-box {
 	margin-bottom:15px;
 	padding-top: 15px;
@@ -65,6 +68,9 @@ body, #page-wrapper {
 	color: #11498a;
 	font-size: 32px;
 }
+.nav-second-level i.fa {
+	font-size: 20px !important;
+}
 #side-menu .sbtxt {
 	position: relative;
 	bottom: 5px;
@@ -74,7 +80,7 @@ body, #page-wrapper {
 }
 
 .sidebar .nav-second-level li a {
-	padding-left: 70px;
+	padding-left: 34px;
 }
 
 .right-sidebar {
@@ -131,6 +137,7 @@ body, #page-wrapper {
 }
 
 /* Buttons, Forms & Elements */
+.alert.alert-info {text-align:center;}
 div#bar-details {
 	padding-bottom: 5px !important;
 	padding-top: 5px !important;
