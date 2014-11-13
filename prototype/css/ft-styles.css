@@ -211,12 +211,13 @@ i.date-refresh {
 	font-size: 24px;
 	color: #fff;
 	text-align: center;
-	margin: 7px 10px;
+	margin: 0px 10px;
 }
 .stats ul li p {
 	font-size: 13px;
 	display: block;
 	clear: both;
+	margin: 5px 0 0 0;
 }
 
 /* Footer */
