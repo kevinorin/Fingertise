@@ -92,8 +92,9 @@ h1, h2, h3, h4, h5 {
 }
 .naviagtion {
 	float: left;
-	margin: 0 0 0 17px;
+	margin: 9px 0 0 50px;
 	padding: 0px;
+    width: 50%
 }
 .naviagtion ul li {
 	list-style: none;
@@ -1354,4 +1355,32 @@ img {
 .refresh_new {
 	margin: 36px 0 0 5px;
 }
+}
+
+.nav-menu-item-a {
+display: block;
+padding: 5px 12px;
+font-family: 'Swis721BTBold';
+font-size: 17px;
+color: #565b61;
+text-decoration: none;
+text-shadow: 0 1px #fbfbfb;
+border: solid 1px #e6e6e6;
+}
+
+.signup-link {
+background: #1e64b4;
+border-radius: 0 0 5px 5px;
+float: right;
+margin-top: -15px;
+padding: 0 20px;
+}
+
+.signup-link ul li {
+list-style: none;
+display: inline-block;
+font-size: 16px;
+color: #fff;
+margin: 0 7px 6px 7px;
+text-decoration: none;
 }
