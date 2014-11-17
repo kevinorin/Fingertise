@@ -64,6 +64,10 @@ body, #page-wrapper {
 	border: none !important;
 }
 
+.login-panel {
+    margin-top: 10%;
+}
+
 /* Gradients */
 .gradient-yellow {
 	background: #fcf8ea; /* Old browsers */
