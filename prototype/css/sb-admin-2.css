@@ -18,6 +18,10 @@ body {
     background-color: #fff;
 }
 
+#page-wrapper.no-side {
+    margin: 0 !important;
+}
+
 @media(min-width:768px) {
     #page-wrapper {
         position: inherit;

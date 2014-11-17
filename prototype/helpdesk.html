@@ -51,6 +51,10 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a href="#" class="logo"><img src="../assets/images/logo.jpg" alt="Fingertise"></a>
+                <select class="form-control dash-select">
+                    <option>Advertiser</option>
+                    <option>Developer</option>
+                </select>
             </div>
             <!-- /.navbar-header -->
 
@@ -74,50 +78,77 @@
             </ul>
             <!-- /.navbar-top-links -->
 
-            <div class="navbar-default sidebar" role="navigation">
-                <div class="sidebar-nav navbar-collapse">
-                    <ul class="nav" id="side-menu">
-                        <li class="sidebar-search">
-                            <div class="input-group custom-search-form">
-                                <input type="text" class="form-control" placeholder="Search...">
-                                <span class="input-group-btn">
-                                <button class="btn btn-default" type="button">
-                                    <i class="fa fa-search"></i>
-                                </button>
-                            </span>
-                            </div>
-                            <!-- /input-group -->
-                        </li>
-                        <li>
-                            <a href="ad-dashboard.html"><i class="fa fa-dashboard fa-fw"></i> <span class="sbtxt">Dashboard</span></a>
-                        </li>
-                        <li>
-                            <a href="payment-info.html"><i class="fa fa-money fa-fw"></i> <span class="sbtxt">Payments</span> <span class="fa arrow"></span></a>
-                            
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-area-chart fa-fw"></i> <span class="sbtxt">Reports</span></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-life-bouy fa-fw"></i> <span class="sbtxt">Helpdesk</span></a>
-                        </li>
+            <!-- Main Sidebar Nav -->
+         <div class="navbar-default sidebar" role="navigation">
+             <div class="sidebar-nav navbar-collapse">
+                 <ul class="nav" id="side-menu">
+                     <li class="sidebar-search">
+                         <div class="input-group custom-search-form">
+                             <input type="text" class="form-control" placeholder="Search...">
+                             <span class="input-group-btn">
+                             <button class="btn btn-default" type="button">
+                                 <i class="fa fa-search"></i>
+                             </button>
+                         </span>
+                         </div>
+                         <!-- /input-group -->
+                     </li>
+                     <li>
+                         <a href="ad-dashboard.html"><i class="fa fa-dashboard fa-fw"></i> <span class="sbtxt">Dashboard</span></a>
+                     </li>
+                     <li>
+                        <a href="#"><i class="fa fa-money fa-fw"></i> <span class="sbtxt">Payments</span> <span class="fa arrow"></span></a>
+                        <!-- /nav-second-lvl -->
                         <ul class="nav nav-second-level">
-                                <li>
-                                    <a class="active" href="support-ticket.html"><i class="fa fa-envelope-o"></i> Support Ticket</a>
-                                </li>
-                                <li>
-                                    <a href="#"><i class="fa fa-headphones"></i> Live Support</a>
-                                </li>
-                            </ul>
-                            <!-- /.nav-second-level -->
-                        <li>
-                            <a href="#"><i class="fa fa-wrench fa-fw"></i> <span class="sbtxt">API</span> <span class="fa arrow"></span></a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- /.sidebar-collapse -->
-            </div>
-            <!-- /.navbar-static-side -->
+                          <li>
+                              <a href="payment-info.html"><i class="fa fa-credit-card fa-fw"></i> Payment Info</a>
+                          </li>
+                          <li>
+                              <a href="#"><i class="fa fa-money fa-fw"></i> Payment History</a>
+                          </li>
+                        </ul>
+                        <!-- nav-second-lvl -->
+                     </li>
+                     <li>
+                        <a href="#"><i class="fa fa-area-chart fa-fw"></i> <span class="sbtxt">Reports</span> <span class="fa arrow"></span></a>
+                        <!-- /nav-second-lvl -->
+                        <ul class="nav nav-second-level">
+                          <li>
+                              <a href="reports-charts.html"><i class="fa fa-line-chart fa-fw"></i> Charts</a>
+                          </li>
+                          <li>
+                              <a href="reports-custom.html"><i class="fa fa-bar-chart fa-fw"></i> Custom Reports</a>
+                          </li>
+                          <li>
+                              <a href="reports-history.html"><i class="fa fa-history fa-fw"></i> Report History</a>
+                          </li>
+                          <li>
+                              <a href="reports-change-history.html"><i class="fa fa-history fa-fw"></i> Change History</a>
+                          </li>
+                        </ul>
+                        <!-- nav-second-lvl -->
+                     </li>
+                     <li class="active">
+                        <a href="#"><i class="fa fa-life-bouy fa-fw"></i> <span class="sbtxt">Helpdesk</span> <span class="fa arrow"></span></a>
+                        <!-- /nav-second-lvl -->
+                        <ul class="nav nav-second-level">
+                          <li>
+                              <a class="active" href="helpdesk.html"><i class="fa fa-ticket fa-fw"></i> Support Ticket</a>
+                          </li>
+                          <li>
+                              <a href="#"><i class="fa fa-wechat fa-fw"></i> Live Support</a>
+                          </li>
+                       </ul>
+                       <!-- /nav-second-lvl -->
+                     </li>
+                     <li>
+                         <a href="#"><i class="fa fa-wrench fa-fw"></i> <span class="sbtxt">API</span></a>
+                     </li>
+                 </ul>
+             </div>
+             <!-- /.sidebar-collapse -->
+         </div>
+         <!-- Main Sidebar Nav -->
         </nav>
 
         <div id="page-wrapper">
@@ -163,7 +194,8 @@
                                     <div class="col-lg-3 col-md-4 col-xs-4">
                                         <label>Email ID: <span class="text-danger">*</span></label>
                                     </div>
-                                    <div class="col-lg-9 col-md-8 col-xs-8"><p>email@example.com</p>
+                                    <div class="col-lg-9 col-md-8 col-xs-8">
+                                      <input class="form-control" id="disabledInput" type="text" placeholder="Avery@gmail.com" disabled="">
                                     </div>
                                 </div>
                                 <!-- /row -->
@@ -171,10 +203,10 @@
                                  <div class="panel-body">
                                      <div class="col-lg-3 col-md-4 col-xs-4">
                                         <label> Subject: <span class="text-danger">*</span></label>
-                                        </div>
+                                      </div>
                                         <div class="col-lg-9 col-md-8 col-xs-8">
                                         <input class="form-control" placeholder="">
-                                    </div>
+                                      </div>
                                     </div>
                                  <!-- /row -->
                                  <!-- row -->
@@ -288,12 +320,7 @@ get back to you within 24 business hours. </p>
     <script src="js/bootstrap.min.js"></script>
 
     <!-- Metis Menu Plugin JavaScript -->
-    <script src="js/plugins/metisMenu/metisMenu.min.js"></script>
-
-    <!-- Morris Charts JavaScript -->
-    <script src="js/plugins/morris/raphael.min.js"></script>
-    <script src="js/plugins/morris/morris.min.js"></script>
-    <script src="js/plugins/morris/morris-data.js"></script>
+    <script src="js/plugins/metisMenu/metisMenu.js"></script>
 
     <!-- Custom Theme JavaScript -->
     <script src="js/sb-admin-2.js"></script>

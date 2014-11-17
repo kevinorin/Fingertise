@@ -13,7 +13,25 @@ a {color:#565b61; }
 a:hover {color:#11498a; }
 
 a.logo {
-	margin-left:10px;
+	margin:0 10px;
+}
+.no-lh {
+	line-height: 0 !important;
+}
+.no-lh input {
+	position: relative;
+	bottom: 14px;
+}
+.center {
+	display: block;
+	text-align:center; 
+	margin:0 auto;
+}
+select.form-control.dash-select {
+	display: inline-block;
+	position: relative;
+	top:3px;
+	width: 110px;
 }
 
 /* Header & Nav */
