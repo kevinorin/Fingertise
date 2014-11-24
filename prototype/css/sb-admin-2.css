@@ -355,3 +355,85 @@ table.dataTable thead .sorting:after {
 .panel-yellow a:hover {
     color: #df8a13;
 }
+
+/*Yeasir Styles Added here*/
+
+
+table.resp-table .editForm td {
+    padding: 0;
+    text-align: left;
+    margin: 0;
+    width: 75%;
+    display: table-cell;
+}
+.summeryTdBox {
+    color: #FFFFFF;
+}
+.summeryTdBox .panel {
+    background: none;
+    border: none;
+    box-shadow: none;
+    margin: 0;
+}
+.summeryTdBox .panel .panel-heading {
+    /*background-color: #0452c0;*/
+    border-radius: 0;
+}
+.summeryTdBox .panel .panel-body {
+    background: none;
+    border-radius: 0;
+}
+.summeryTdBox .panel-body ul {
+    list-style: none;
+    padding: 0;
+}
+.summeryTdBox ul li {
+    border-bottom: 1px dotted #cccccc;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 5px 0;
+}
+.summeryTdBox .panel-body label{
+    color: inherit;
+    display: block;
+    margin: 0;
+    line-height: inherit;
+}
+.radio-inline, .checkbox-inline {
+    line-height: 21px;
+}
+table.resp-table .editForm td:before {
+    display: none;
+}
+.efcform-horizon .control-label {
+    text-align: left;
+}
+.efCont {
+    background: #FFFFFF;
+    vertical-align: top;
+}
+.efCont .container-fluid {
+    padding: 15px;
+}
+.efCont .radio-inline > a {
+    font-size: 13px;
+}
+.req {
+    color: #a94442;
+    margin-left: 2px;
+}
+@media(min-width:1024px) {
+    table.resp-table .editForm td:first-child {
+        width: 25%;
+        min-width: 260px;
+    }
+    .efCont .container-fluid {
+        padding-right: 0;
+    }
+}
+@media(max-width:1023px) {
+    table.resp-table .editForm td {
+        width: 100%;
+        display: block;
+    }
+}
