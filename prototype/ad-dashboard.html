@@ -247,7 +247,12 @@
                           <tr>
                               <td><input type="checkbox" value=""></td>
                               <td>#</td>
-                              <td>thedroidmarket</td>
+                              <td>
+                                  thedroidmarket <br/>
+                                  <button class="btn btn-outline btn-primary ef_btn">
+                                      Edit
+                                  </button>
+                              </td>
                               <td>012456</td>
                               <td>ad</td>
                               <td>Enabled</td>
@@ -257,175 +262,14 @@
                               <td>$0.00</td>
                           </tr>
 
-<tr style="background: none;" class="hide">
-<td colspan="14" style="padding: 0">
-    <form action="#">
-        <div class="editForm">
-            <table width="100%">
-                <tr>
-                    <td class="blue-box border-box summeryTdBox">
-                        <div class="panel panel-primary">
-                            <div class="panel-heading">
-                                <i class="fa fa-list-alt"></i> <strong>SUMMARY</strong>
-                            </div>
-                            <div class="panel-body">
-                                <ul>
-                                    <li style="" id="libanner360_smmary">
-                                        <label>360 banner Ads:</label>
-                                        <span id="smmary_360b">
-                                            Abstract Banners - Large&nbsp;:&nbsp;<span id="dispabl">Enabled</span><span id="dispablads"></span><br>
-                                            Abstract Banners - Small&nbsp;:&nbsp;<span id="dispabs">Enabled</span><br>
-                                            Abstract Banners - Video&nbsp;:&nbsp;<span id="dispvb">Enabled</span><br>
-                                            Banner Ads - Traditional&nbsp;:&nbsp;<span id="dispsb">Enabled</span><br>
-                                        </span>
-                                    </li>
-
-                                    <li id="lipush_smmary">
-                                        <label>Push Notification Ads:</label>
-                                        <span id="push_summary">
-                                            Users&nbsp;:&nbsp;<span id="dispwhowillget">All Users</span><br>
-                                            Frequency&nbsp;:&nbsp;<span id="dispadsoften">3 Ads/Day</span><br>
-                                            Delay&nbsp;:&nbsp;<span id="dispfirstaddelay">0 day(s)</span><br>
-                                        </span>
-                                        <span id="disable_push_summary" style="display: none;">Status&nbsp;:&nbsp;<span id="push_status">Disabled</span></span>
-                                    </li>
-                                    <li id="liicon_smmary">
-                                        <label>Icon Ads:</label>
-                                        <span id="icon_summary">Ads per user per month&nbsp;:&nbsp;<span id="dispiconspermonth">5</span></span>
-                                        <span id="disable_icon_summary" style="display: none;">Status&nbsp;:&nbsp;<span id="icon_status">Disabled</span></span>
-                                    </li>
-                                    <li id="lismart_smmary">
-                                        <label>Smartwall Ads:</label>
-                                        <span id="smart_smmary">
-                                            Appwall Ads&nbsp;:&nbsp;<span id="dispappwall">Enabled</span><br>
-                                            Dialog Ads&nbsp;:&nbsp;<span id="dispdialog">Enabled</span><br>
-                                            Landing page Ads&nbsp;:&nbsp;<span id="displanding">Enabled</span><br>
-                                            Rich Media Full Page Ads&nbsp;:&nbsp;<span id="disprmfp">Enabled</span><br>
-                                            Overlay Ads&nbsp;:&nbsp;<span id="dispoverlay">Enabled</span><br>
-                                            Video Ads&nbsp;:&nbsp;<span id="dispvideo">Enabled</span><br>
-                                        </span>
-                                        <!-- <span id="disable_smart_smmary">Status&nbsp;:&nbsp;<span id="smart_status">Disabled</span></span> -->
-                                    </li>
-                                    <li id="libanner_smmary">
-                                        <label>Banner Ads:</label>
-                                        <span id="inapp_smmary">
-                                            <!-- Image Banner Ads&nbsp;:&nbsp;<span id="dispinappimgban">5</span><br/>
-                                            Rich Media Banner Ads&nbsp;:&nbsp;<span id="dispinapprchban"></span><br/> -->
-                                            Status&nbsp;:&nbsp;<span id="dispinappimgban">Enabled</span><br>
-                                        </span>
-                                        <span id="refresh_interval_summary">Refresh Ads&nbsp;:&nbsp;<span id="dispRefreshInterval">5</span></span>
-                                        <!-- <span id="disable_smart_smmary">Status&nbsp;:&nbsp;<span id="smart_status">Disabled</span></span> -->
-                                    </li>
-                                    <li id="limisc_smmary">
-                                        <label>Misc. Settings:</label>
-                                        <span id="miscset_summary">Exclude Dating Campaigns&nbsp;:&nbsp;<span id="dispdating">No</span></span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </td>
-                    <td class="efCont">
-                    <div class="container-fluid">
-                        <div class="form-horizontal efcform-horizon">
-                            <div class="form-group">
-                                <label for="input1" class="col-sm-2 control-label">
-                                    App Name : <span class="req">*</span>
-                                </label>
-                                <div class="col-sm-6">
-                                    <input type="text" class="form-control" id="input1" placeholder="Email">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label class="col-sm-2 control-label">
-                                    App Type :
-                                    <span class="req">*</span>
-                                </label>
-                                <div class="col-sm-6">
-                                    <label class="radio-inline">
-                                        <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Android Market URL
-                                    </label>
-                                    <label class="radio-inline">
-                                        <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" checked> Off-Market URL
-                                    </label>
-                                    <label class="radio-inline"><a title="" data-placement="right" data-toggle="tooltip"
-                                                                      data-original-title="For google android market, Use the following URL to directly link your app to the Android Market using following format ( http://play.google.com/store/apps/details?id=package-name) and for other app market URL provide direct link to your app.">
-                                        <i class="fa  fa-info-circle"></i>
-                                    </a></label>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="input3" class="col-sm-2 control-label">
-                                    App URL :
-                                    <span class="req">*</span>
-                                </label>
-                                <div class="col-sm-6">
-                                    <input type="text" class="form-control" id="input3" placeholder="Enter your APK url here">
-                                    <p class="help-block">Please enter the Android Market URL or Off-Market URL</p>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label class="col-sm-2 control-label">
-                                    Category :
-                                    <span class="req">*</span>
-                                </label>
-                                <div class="col-sm-6">
-                                    <select class="form-control"><option value="" selected="selected">Select Category</option>
-                                        <option value="1">Arts and Entertainment</option>
-                                        <option value="2">Automotive</option>
-                                        <option value="3">Business</option>
-                                        <option value="4">Careers</option>
-                                        <option value="227">Dating</option>
-                                        <option value="5">Education</option>
-                                        <option value="6">Family and Parenting</option>
-                                        <option value="13">Finance Personal</option>
-                                        <option value="8">Food and Drink</option>
-                                        <option value="393">Games</option>
-                                        <option value="7">Health and Fitness</option>
-                                        <option value="9">Hobbies and Interests</option>
-                                        <option value="10">Home and Garden</option>
-                                        <option value="26">Illegal Content</option>
-                                        <option value="11">Law, Gov't and Politics</option>
-                                        <option value="12">News</option>
-                                        <option value="25">Non-Standard Content</option>
-                                        <option value="16">Pets</option>
-                                        <option value="21">Real Estate</option>
-                                        <option value="23">Religion and Spirituality</option>
-                                        <option value="15">Science</option>
-                                        <option value="22">Shopping</option>
-                                        <option value="14">Society</option>
-                                        <option value="17">Sports</option>
-                                        <option value="18">Style and Fashion</option>
-                                        <option value="19">Technology and Computing</option>
-                                        <option value="20">Travel</option>
-                                        <option value="24">Uncategorized</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label class="col-sm-2 control-label">
-                                    Sub Category :
-                                    <span class="req">*</span>
-                                </label>
-                                <div class="col-sm-6">
-                                    <select class="form-control" id="subselCategoryEdit1" name="subselCategoryEdit1">
-                                        <option value="">Please Select Category</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    </td>
-                </tr>
-            </table>
-        </div>
-    </form>
-</td>
-</tr>
-
                           <tr>
                               <td><input type="checkbox" value=""></td>
                               <td>#</td>
-                              <td>thedroidmarket</td>
+                              <td>thedroidmarket <br/>
+                                  <button class="btn btn-outline btn-primary ef_btn">
+                                      Edit
+                                  </button>
+                              </td>
                               <td>012456</td>
                               <td>ad</td>
                               <td>Enabled</td>
@@ -437,7 +281,11 @@
                           <tr>
                               <td><input type="checkbox" value=""></td>
                               <td>#</td>
-                              <td>thedroidmarket</td>
+                              <td>thedroidmarket <br/>
+                                  <button class="btn btn-outline btn-primary ef_btn">
+                                      Edit
+                                  </button>
+                              </td>
                               <td>012456</td>
                               <td>ad</td>
                               <td>Enabled</td>
@@ -449,7 +297,11 @@
                           <tr>
                               <td><input type="checkbox" value=""></td>
                               <td>#</td>
-                              <td>thedroidmarket</td>
+                              <td>thedroidmarket <br/>
+                                  <button class="btn btn-outline btn-primary ef_btn">
+                                      Edit
+                                  </button>
+                              </td>
                               <td>012456</td>
                               <td>ad</td>
                               <td>Enabled</td>
@@ -501,6 +353,357 @@
              </div>
    </footer>
 
+
+
+    <!--Table Edit Form Tr-->
+    <div id="eformTable" class="hide">
+        <table>
+
+        <tr class="efTr">
+        <td colspan="14" style="padding: 0">
+        <form action="#">
+        <div class="editForm">
+        <table width="100%">
+        <tr>
+        <td class="blue-box border-box summeryTdBox">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <i class="fa fa-list-alt"></i> <strong>SUMMARY</strong>
+                </div>
+                <div class="panel-body">
+                    <ul>
+                        <li style="" id="libanner360_smmary">
+                            <label>360 banner Ads:</label>
+                                        <span id="smmary_360b">
+                                            Abstract Banners - Large&nbsp;:&nbsp;<span id="dispabl">Enabled</span><span id="dispablads"></span><br>
+                                            Abstract Banners - Small&nbsp;:&nbsp;<span id="dispabs">Enabled</span><br>
+                                            Abstract Banners - Video&nbsp;:&nbsp;<span id="dispvb">Enabled</span><br>
+                                            Banner Ads - Traditional&nbsp;:&nbsp;<span id="dispsb">Enabled</span><br>
+                                        </span>
+                        </li>
+
+                        <li id="lipush_smmary">
+                            <label>Push Notification Ads:</label>
+                                        <span id="push_summary">
+                                            Users&nbsp;:&nbsp;<span id="dispwhowillget">All Users</span><br>
+                                            Frequency&nbsp;:&nbsp;<span id="dispadsoften">3 Ads/Day</span><br>
+                                            Delay&nbsp;:&nbsp;<span id="dispfirstaddelay">0 day(s)</span><br>
+                                        </span>
+                            <span id="disable_push_summary" style="display: none;">Status&nbsp;:&nbsp;<span id="push_status">Disabled</span></span>
+                        </li>
+                        <li id="liicon_smmary">
+                            <label>Icon Ads:</label>
+                            <span id="icon_summary">Ads per user per month&nbsp;:&nbsp;<span id="dispiconspermonth">5</span></span>
+                            <span id="disable_icon_summary" style="display: none;">Status&nbsp;:&nbsp;<span id="icon_status">Disabled</span></span>
+                        </li>
+                        <li id="lismart_smmary">
+                            <label>Smartwall Ads:</label>
+                                        <span id="smart_smmary">
+                                            Appwall Ads&nbsp;:&nbsp;<span id="dispappwall">Enabled</span><br>
+                                            Dialog Ads&nbsp;:&nbsp;<span id="dispdialog">Enabled</span><br>
+                                            Landing page Ads&nbsp;:&nbsp;<span id="displanding">Enabled</span><br>
+                                            Rich Media Full Page Ads&nbsp;:&nbsp;<span id="disprmfp">Enabled</span><br>
+                                            Overlay Ads&nbsp;:&nbsp;<span id="dispoverlay">Enabled</span><br>
+                                            Video Ads&nbsp;:&nbsp;<span id="dispvideo">Enabled</span><br>
+                                        </span>
+                            <!-- <span id="disable_smart_smmary">Status&nbsp;:&nbsp;<span id="smart_status">Disabled</span></span> -->
+                        </li>
+                        <li id="libanner_smmary">
+                            <label>Banner Ads:</label>
+                                        <span id="inapp_smmary">
+                                            <!-- Image Banner Ads&nbsp;:&nbsp;<span id="dispinappimgban">5</span><br/>
+                                            Rich Media Banner Ads&nbsp;:&nbsp;<span id="dispinapprchban"></span><br/> -->
+                                            Status&nbsp;:&nbsp;<span id="dispinappimgban">Enabled</span><br>
+                                        </span>
+                            <span id="refresh_interval_summary">Refresh Ads&nbsp;:&nbsp;<span id="dispRefreshInterval">5</span></span>
+                            <!-- <span id="disable_smart_smmary">Status&nbsp;:&nbsp;<span id="smart_status">Disabled</span></span> -->
+                        </li>
+                        <li id="limisc_smmary">
+                            <label>Misc. Settings:</label>
+                            <span id="miscset_summary">Exclude Dating Campaigns&nbsp;:&nbsp;<span id="dispdating">No</span></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </td>
+        <td class="efCont">
+        <div class="container-fluid">
+        <div class="form-horizontal efcform-horizon">
+            <div class="form-group">
+                <label for="input1" class="col-sm-2 control-label">
+                    App Name : <span class="req">*</span>
+                </label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" id="input1" placeholder="Email">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 control-label">
+                    App Type :
+                    <span class="req">*</span>
+                </label>
+                <div class="col-sm-6">
+                    <label class="radio-inline">
+                        <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Android Market URL
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" checked> Off-Market URL
+                    </label>
+                    <label class="radio-inline"><a title="" data-placement="right" data-toggle="tooltip"
+                                                   data-original-title="For google android market, Use the following URL to directly link your app to the Android Market using following format ( http://play.google.com/store/apps/details?id=package-name) and for other app market URL provide direct link to your app.">
+                        <i class="fa  fa-info-circle"></i>
+                    </a></label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="input3" class="col-sm-2 control-label">
+                    App URL :
+                    <span class="req">*</span>
+                </label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" id="input3" placeholder="Enter your APK url here">
+                    <p class="help-block">Please enter the Android Market URL or Off-Market URL</p>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 control-label">
+                    Category :
+                    <span class="req">*</span>
+                </label>
+                <div class="col-sm-6">
+                    <select class="form-control"><option value="" selected="selected">Select Category</option>
+                        <option value="1">Arts and Entertainment</option>
+                        <option value="2">Automotive</option>
+                        <option value="3">Business</option>
+                        <option value="4">Careers</option>
+                        <option value="227">Dating</option>
+                        <option value="5">Education</option>
+                        <option value="6">Family and Parenting</option>
+                        <option value="13">Finance Personal</option>
+                        <option value="8">Food and Drink</option>
+                        <option value="393">Games</option>
+                        <option value="7">Health and Fitness</option>
+                        <option value="9">Hobbies and Interests</option>
+                        <option value="10">Home and Garden</option>
+                        <option value="26">Illegal Content</option>
+                        <option value="11">Law, Gov't and Politics</option>
+                        <option value="12">News</option>
+                        <option value="25">Non-Standard Content</option>
+                        <option value="16">Pets</option>
+                        <option value="21">Real Estate</option>
+                        <option value="23">Religion and Spirituality</option>
+                        <option value="15">Science</option>
+                        <option value="22">Shopping</option>
+                        <option value="14">Society</option>
+                        <option value="17">Sports</option>
+                        <option value="18">Style and Fashion</option>
+                        <option value="19">Technology and Computing</option>
+                        <option value="20">Travel</option>
+                        <option value="24">Uncategorized</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 control-label" style="padding-right: 0">
+                    Sub Category :
+                    <span class="req">*</span>
+                </label>
+                <div class="col-sm-6">
+                    <select class="form-control" id="subselCategoryEdit1" name="subselCategoryEdit1">
+                        <option value="">Please Select Category</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div id="accordion" class="panel-group">
+            <div class="panel panel-default hide">
+                <div class="panel-heading ">
+                    <h4 class="panel-title">
+                        <a href="#collapseOne" data-parent="#accordion" data-toggle="collapse" aria-expanded="true" class="">Collapsible Group Item #1</a>
+                    </h4>
+                </div>
+                <div style="" aria-expanded="true" id="cl0" class="panel-collapse collapse in">
+                </div>
+            </div>
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h4 class="panel-title checkbox">
+                        <label class="pull-left">
+                            <input type="checkbox" value="">
+                        </label>
+                                            <span href="#collapseOne" data-parent="#accordion" data-toggle="collapse" class="collapsed" aria-expanded="false">360 Banner Ads
+                                                <a data-original-title="360 Banner reinvents the traditional in-app banner placement, automatically mediating between traditional Static Banners, Advanced Overlays, as well as Airpush's revolutionary Video Banner Ads and Abstract Banners. This results in a greater user experience and a huge increase in developer earnings." data-toggle="tooltip" data-placement="right" title="">
+                                                    <i class="fa  fa-info-circle"></i>
+                                                </a>
+                                            </span>
+
+
+                    </h4>
+                </div>
+                <div class="panel-collapse collapse" id="collapseOne" aria-expanded="false">
+                    <div id="div_sliderbody_360b" class="body" style="display: block;">
+
+                        <div class="formRow">
+                            <div class="f_left">
+                                360 Banner reinvents the traditional in-app banner placement, automatically mediating between traditional Static Banners, Advanced Overlays, as well as Airpush's revolutionary Video Banner Ads and Abstract Banners. This results in a greater user experience and a huge increase in developer earnings.
+                            </div>
+                        </div>
+                        <div class="formRow">
+                            <div class="fluid row">
+                                <div class="grid3  col-sm-4">
+                                    <label>Abstract Banners - Large:</label>
+                                    <div style="float:left; margin-left:0px; margin-top:-5px;">
+                                        <a style="color:#0a88bd !important;" data-toggle="modal" href="#myModal1">Learn More...</a>
+                                    </div>
+                                </div>
+                                <div class="grid9  col-sm-8">
+                                    <label class="" style="margin: 0;">
+                                        <input type="checkbox" value="">
+                                    </label>
+
+                                    <div class="form-inline" role="form">
+                                        <div class="form-group">
+                                            <label class="">
+                                                <input type="checkbox" value="">
+                                            </label> &nbsp;
+                                        </div>
+                                        <div class="form-group">
+                                            <span>Display Every</span> &nbsp;
+                                            <input type="text" class="form-control" placeholder="1" style="width: 40px"> &nbsp;
+                                            <span>Ads</span> &nbsp;
+                                        </div>
+                                        <a href="" data-placement="right" data-toggle="tooltip"
+                                           data-original-title="In order to give you complete control of your user's ad experience,
+                                                           this tool allows you to select the frequency that they will see large vs small abstract banners.">
+                                            <i class="fa  fa-info-circle"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="formRow">
+                            <div class="fluid row">
+                                <div class="grid3  col-sm-4">
+                                    <label>Abstract Banners - Small :</label>
+                                    <div style="float:left; margin-left:0px; margin-top:-5px;">
+                                        <a href="#myModal1" data-toggle="modal" style="color:#0a88bd !important;">Learn More...</a>
+                                    </div>
+                                </div>
+                                <div class="grid9  col-sm-8">
+                                    <label style="margin: 0;">
+                                        <input type="checkbox" value="">
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="formRow"><div class="fluid row">
+                            <div class="grid3  col-sm-4">
+                                <label>Abstract Banners - Video :</label>
+                                <div style="float:left; margin-left:0px; margin-top:-5px;">
+                                    <a href="#myModal1" data-toggle="modal" style="color:#0a88bd !important;">Learn More...</a>
+                                </div>
+                            </div>
+                            <div class="grid9  col-sm-8">
+                                <label style="margin: 0;">
+                                    <input type="checkbox" value="">
+                                </label>
+                            </div>
+                        </div></div>
+                        <div class="formRow"><div class="fluid row">
+                            <div class="grid3  col-sm-4">
+                                <label>Banner Ads - Traditional :</label>
+                                <div style="float:left; margin-left:0px; margin-top:-5px;">
+                                    <a href="#myModal1" data-toggle="modal" style="color:#0a88bd !important;">Learn More...</a>
+                                </div>
+                            </div>
+                            <div class="grid9  col-sm-8">
+                                <label style="margin: 0;">
+                                    <input type="checkbox" value="">
+                                </label>
+                            </div>
+                        </div>  </div>
+                        <div class="formRow noBorderB">
+                            <label class="checkbox-inline" style="margin: 0;">
+                                <input type="checkbox" value="">
+                                <strong style="color: #0096a8">Activate 360 banner Ads for all Apps</strong> &nbsp;
+                                <a data-original-title="Frequency selection of large abstract banners does not affect other applications." data-toggle="tooltip" data-placement="right" title="">
+                                    <i class="fa  fa-info-circle"></i>
+                                </a>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a href="#collapseTwo" data-parent="#accordion" data-toggle="collapse" class="collapsed" aria-expanded="false">Collapsible Group Item #2</a>
+                    </h4>
+                </div>
+                <div class="panel-collapse collapse" id="collapseTwo" aria-expanded="false">
+                    <div class="panel-body">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a href="#collapseThree" data-parent="#accordion" data-toggle="collapse" class="collapsed" aria-expanded="false">Collapsible Group Item #3</a>
+                    </h4>
+                </div>
+                <div class="panel-collapse collapse" id="collapseThree" aria-expanded="false">
+                    <div class="panel-body">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </div>
+        </td>
+        </tr>
+        </table>
+
+        <div class="closeEform">
+            <i class="fa   fa-times-circle"></i>
+        </div>
+
+        </div>
+        </form>
+        </td>
+        </tr>
+
+        </table>
+    </div>
+    <!--Table Edit Form Tr Ends-->
+
+
+    <!--Modals-->
+
+    <!-- Modal 1 -->
+    <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal 1 ends-->
+
+
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
 
@@ -515,7 +718,39 @@
 
     <script>
         $(function () {
-            $('[data-toggle="tooltip"]').tooltip()
+            $('[data-toggle="tooltip"]').tooltip();
+
+            $('.resp-table tr td:nth-child(3)').on('mouseenter', function(){
+                $(this).find('.ef_btn').show();
+            }).on('mouseleave', function(){
+                $(this).find('.ef_btn').hide();
+            });
+
+
+
+            $('.ef_btn').on('click', function(){
+                $('.ef_btn').removeClass('bshow');
+                var getTr = $('#eformTable').find('tr').clone()[0],
+                    contextTr = $(this).closest('tr');
+                if(contextTr.next('.efTr').length){
+                    contextTr.next('.efTr').remove();
+                    return false;
+                }
+                contextTr.siblings('.efTr').remove();
+                $(this).addClass('bshow');
+                contextTr.after(getTr);
+                $('[data-toggle="tooltip"]').tooltip();
+            });
+
+            $('body').on('click', '.closeEform', function(){
+                var getPTr = $(this).closest('tr'),
+                        contextTr = getPTr.prev();
+                contextTr.find('.ef_btn').removeClass('bshow');
+                getPTr.remove();
+            })
+
+
+
         })
     </script>
 

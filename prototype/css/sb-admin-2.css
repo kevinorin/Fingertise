@@ -363,8 +363,12 @@ table.resp-table .editForm td {
     padding: 0;
     text-align: left;
     margin: 0;
-    width: 75%;
     display: table-cell;
+    vertical-align: top;
+    width: 75%;
+}
+.efCont .container-fluid {
+    max-width: 750px;
 }
 .summeryTdBox {
     color: #FFFFFF;
@@ -409,7 +413,7 @@ table.resp-table .editForm td:before {
     text-align: left;
 }
 .efCont {
-    background: #FFFFFF;
+    /*background: #FFFFFF;*/
     vertical-align: top;
 }
 .efCont .container-fluid {
@@ -422,14 +426,75 @@ table.resp-table .editForm td:before {
     color: #a94442;
     margin-left: 2px;
 }
+.panel-title.checkbox {
+    margin: 0;
+}
+.panel-title.checkbox > a,
+.panel-title.checkbox > span{
+    margin-left: 20px;
+    display: block;
+    cursor: pointer;
+}
+.panel-title.checkbox > span a {
+    color: #111;
+    margin-left: 25px;
+}
+.panel-title.checkbox > a:hover {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.panel-title.checkbox > a:focus {
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+.efCont #accordion .panel-body {
+    background: none;
+}
+div.tooltip-inner {
+    max-width: 380px;
+    font-weight: normal;
+}
+.formRow:after {
+    clear: both;
+    content: "";
+    display: block;
+}
+.formRow {
+    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #fff;
+    padding: 16px 15px;
+}
+.noBorderB {
+    border-bottom: medium none !important;
+}
+.btn.btn-primary.ef_btn {
+    padding: 3px 5px;
+    font: inherit;
+    display: none;
+}
+.bshow {
+    display: inline-block !important;
+}
+.editForm {
+    position: relative;
+}
+.closeEform {
+    position: absolute;
+    right: 10px;
+    top: 7px;
+    font-size: 20px;
+    color: #000000;
+    cursor: pointer;
+}
 @media(min-width:1024px) {
     table.resp-table .editForm td:first-child {
         width: 25%;
         min-width: 260px;
     }
-    .efCont .container-fluid {
+    /*.efCont .container-fluid {
         padding-right: 0;
-    }
+    }*/
 }
 @media(max-width:1023px) {
     table.resp-table .editForm td {
