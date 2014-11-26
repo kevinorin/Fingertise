@@ -504,18 +504,15 @@
                         <label class="pull-left">
                             <input type="checkbox" value="">
                         </label>
-                                            <span href="#collapseOne" data-parent="#accordion" data-toggle="collapse" class="collapsed" aria-expanded="false">360 Banner Ads
-                                                <a data-original-title="360 Banner reinvents the traditional in-app banner placement, automatically mediating between traditional Static Banners, Advanced Overlays, as well as Airpush's revolutionary Video Banner Ads and Abstract Banners. This results in a greater user experience and a huge increase in developer earnings." data-toggle="tooltip" data-placement="right" title="">
-                                                    <i class="fa  fa-info-circle"></i>
-                                                </a>
-                                            </span>
-
-
+                        <span href="#collapseOne" data-parent="#accordion" data-toggle="collapse" class="collapsed" aria-expanded="false">360 Banner Ads
+                            <a data-original-title="360 Banner reinvents the traditional in-app banner placement, automatically mediating between traditional Static Banners, Advanced Overlays, as well as Airpush's revolutionary Video Banner Ads and Abstract Banners. This results in a greater user experience and a huge increase in developer earnings." data-toggle="tooltip" data-placement="right" title="">
+                                <i class="fa  fa-info-circle"></i>
+                            </a>
+                        </span>
                     </h4>
                 </div>
                 <div class="panel-collapse collapse" id="collapseOne" aria-expanded="false">
                     <div id="div_sliderbody_360b" class="body" style="display: block;">
-
                         <div class="formRow">
                             <div class="f_left">
                                 360 Banner reinvents the traditional in-app banner placement, automatically mediating between traditional Static Banners, Advanced Overlays, as well as Airpush's revolutionary Video Banner Ads and Abstract Banners. This results in a greater user experience and a huge increase in developer earnings.
@@ -610,14 +607,84 @@
             </div>
             <div class="panel panel-primary">
                 <div class="panel-heading">
-                    <h4 class="panel-title">
-                        <a href="#collapseTwo" data-parent="#accordion" data-toggle="collapse" class="collapsed" aria-expanded="false">Collapsible Group Item #2</a>
+                    <h4 class="panel-title checkbox">
+                        <label class="pull-left">
+                            <input type="checkbox" value="">
+                        </label>
+                        <span href="#collapseTwo" data-parent="#accordion" data-toggle="collapse" class="collapsed" aria-expanded="false">Push Notification Ads
+                            <a data-original-title="Push notification ads are text ads pushed to the notification tray of Android devices. Unlike traditional mobile ads, these ads are not placed inside apps. When users click the ad, the destination URL is loaded in a browser window." data-toggle="tooltip" data-placement="right" title="">
+                                <i class="fa  fa-info-circle"></i>
+                            </a>
+                        </span>
                     </h4>
                 </div>
-                <div class="panel-collapse collapse" id="collapseTwo" aria-expanded="false">
-                    <div class="panel-body">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </div>
+                <div class="panel-collapse collapse blClrLbl" id="collapseTwo" aria-expanded="false">
+                    <div class="formRow">
+                        <div role="form" class="form-inline">
+                            <div class="form-group">
+                                <strong>Who will get your Ads?</strong>
+                                <span class="req">*</span> &nbsp;
+                                <a data-original-title="You will be able to target your users using this option. You can either choose 'all users' or only those inactive users who haven't used your app for 'n' days." data-toggle="tooltip" data-placement="right" title="">
+                                    <i class="fa  fa-info-circle"></i> &nbsp;
+                                </a>
+                            </div>
+                            <div class="form-group">
+                                <label class="radio-inline">
+                                    <input type="radio" name="pn_radio" checked value=""> All Users
+                                </label>
+                                <label class="radio-inline">
+                                    <input type="radio" name="pn_radio" value=""> User's inactive for these many day
+                                </label> &nbsp;
+                            </div>
+                            <div class="form-group">
+                                <input type="text" style="width: 100px" placeholder="" class="form-control">
+                            </div>
+                        </div>
+                    </div><!--End form row-->
+                    <div class="formRow">
+                        <div role="form" class="form-inline">
+                            <div class="form-group">
+                                <strong>How often will they get these Ads?</strong>
+                                <span class="req">*</span> &nbsp;
+                                <a data-original-title="Using this option, you will determine how often your app users will get the ads. Do note that if the ads are distributed very frequently, there is a chance that the user might uninstall your app." data-toggle="tooltip" data-placement="right" title="">
+                                    <i class="fa  fa-info-circle"></i> &nbsp;
+                                </a>
+                            </div>
+                            <div class="form-group">
+                                <select class="form-control">
+                                    <option value="0.3300" selected="selected">3 Ads/Day</option>
+                                    <option value="0.5000">2 Ads/Day</option>
+                                    <option value="1.0000">1 Ad/Day</option>
+                                    <option value="2.0000">1 Ad in 2 Days</option>
+                                    <option value="3.0000">1 Ad in 3 Days</option>
+                                    <option value="4.0000">1 Ad in 4 Days</option>
+                                    <option value="5.0000">1 Ad in 5 Days</option>
+                                    <option value="6.0000">1 Ad in 6 Days</option>
+                                    <option value="7.0000">1 Ad in 7 Days</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="alert alert-warning">
+                            Note: Three ads per day will be delivered to users if this option is chosen. However,
+                            if the period between two ad deliveries is less than 4 hours, then the second ad will not
+                            be delivered to your users.
+                        </div>
+                    </div><!--End form row-->
+                    <div class="formRow">
+                        <div role="form" class="form-inline">
+                            <div class="form-group">
+                                <strong>Delay the first Ad</strong>
+                                <span class="req">*</span> &nbsp;
+                            </div>
+                            <div class="form-group">
+                                No. of days to delay the user’s first ad
+                                <input type="number" value="0" min="0" max="1" style="width: 45px"/>
+                            </div>
+                        </div>
+                        <div class="alert alert-warning">
+                            Note: For technical and performance reasons, the maximum ad delay setting is now 1 day.
+                        </div>
+                    </div><!--End form row-->
                 </div>
             </div>
             <div class="panel panel-primary">
@@ -634,6 +701,10 @@
             </div>
         </div>
 
+        </div>
+        <div class="submitBtns">
+            <button class="btn btn-primary efSbmt" type="submit">Submit</button> &nbsp;
+            <button class="btn btn-default efCncl" type="reset">Cancel</button>
         </div>
         </td>
         </tr>
@@ -724,8 +795,8 @@
                 $('[data-toggle="tooltip"]').tooltip();
             });
 
-            $('body').on('click', '.closeEform', function(){
-                var getPTr = $(this).closest('tr'),
+            $('body').on('click', '.closeEform, .efCncl', function(){
+                var getPTr = $(this).closest('.efTr'),
                         contextTr = getPTr.prev();
                 contextTr.find('.ef_btn').removeClass('nsef_btn');
                 getPTr.remove();

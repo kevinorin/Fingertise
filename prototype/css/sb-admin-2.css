@@ -415,6 +415,15 @@ table.resp-table .editForm td:before {
 .efCont {
     /*background: #FFFFFF;*/
     vertical-align: top;
+    position: relative;
+    padding-bottom: 22px !important;
+}
+.submitBtns {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    text-align: center;
 }
 .efCont .container-fluid {
     padding: 15px;
@@ -497,6 +506,15 @@ div.tooltip-inner {
     width: 50px;
     display: block;
     margin: 5px auto;
+}
+.blClrLbl .form-group strong {
+    color: #0096a8;
+}
+.blClrLbl a[data-toggle="tooltip"]{
+    margin: 0 5px;
+}
+.blClrLbl .alert {
+    margin: 12px 0 0;
 }
 @media(min-width:1024px) {
     table.resp-table .editForm td:first-child {
