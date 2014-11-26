@@ -198,36 +198,7 @@
 
             <div class="row gray-box border-box">
                 <div class="col-lg-12 col-md-12">
-                  <!-- Edit Modal -->
-                  <div class="panel-body">
-                     <!-- Button trigger modal -->
-                     <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-                       Launch Demo Modal
-                     </button>
-                     <!-- Modal -->
-                     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
-                       <div class="modal-dialog">
-                           <div class="modal-content">
-                               <div class="modal-header">
-                                   <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                                   <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-                               </div>
-                               <div class="modal-body">
-                                   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                               </div>
-                               <div class="modal-footer">
-                                   <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                   <button type="button" class="btn btn-primary">Save changes</button>
-                               </div>
-                           </div>
-                           <!-- /.modal-content -->
-                       </div>
-                       <!-- /.modal-dialog -->
-                     </div>
-                     <!-- /.modal -->
-                     </div>
-                     <!-- /Edit Modal -->
-                    
+                  
                     <table class="resp-table">
                         <thead>
                            <tr>
@@ -248,7 +219,7 @@
                               <td><input type="checkbox" value=""></td>
                               <td>#</td>
                               <td>
-                                  thedroidmarket <br/>
+                                  thedroidmarket 
                                   <button class="btn btn-outline btn-primary ef_btn">
                                       Edit
                                   </button>
@@ -265,7 +236,7 @@
                           <tr>
                               <td><input type="checkbox" value=""></td>
                               <td>#</td>
-                              <td>thedroidmarket <br/>
+                              <td>thedroidmarket
                                   <button class="btn btn-outline btn-primary ef_btn">
                                       Edit
                                   </button>
@@ -281,7 +252,7 @@
                           <tr>
                               <td><input type="checkbox" value=""></td>
                               <td>#</td>
-                              <td>thedroidmarket <br/>
+                              <td>thedroidmarket
                                   <button class="btn btn-outline btn-primary ef_btn">
                                       Edit
                                   </button>
@@ -297,7 +268,7 @@
                           <tr>
                               <td><input type="checkbox" value=""></td>
                               <td>#</td>
-                              <td>thedroidmarket <br/>
+                              <td>thedroidmarket
                                   <button class="btn btn-outline btn-primary ef_btn">
                                       Edit
                                   </button>
@@ -361,6 +332,7 @@
 
         <tr class="efTr">
         <td colspan="14" style="padding: 0">
+        <img class="loading" src="images/loading.gif" alt="Loading"/>
         <form action="#">
         <div class="editForm">
         <table width="100%">
@@ -721,31 +693,41 @@
             $('[data-toggle="tooltip"]').tooltip();
 
             $('.resp-table tr td:nth-child(3)').on('mouseenter', function(){
-                $(this).find('.ef_btn').show();
+                $(this).find('.ef_btn').addClass('sef_btn');
             }).on('mouseleave', function(){
-                $(this).find('.ef_btn').hide();
+                $(this).find('.ef_btn').removeClass('sef_btn');
             });
 
 
 
             $('.ef_btn').on('click', function(){
-                $('.ef_btn').removeClass('bshow');
+                $('.ef_btn').removeClass('nsef_btn');
                 var getTr = $('#eformTable').find('tr').clone()[0],
                     contextTr = $(this).closest('tr');
                 if(contextTr.next('.efTr').length){
-                    contextTr.next('.efTr').remove();
+                    contextTr.next('.efTr').slideToggle('fast', function(){
+                        $(this).remove();
+                    });
                     return false;
                 }
                 contextTr.siblings('.efTr').remove();
-                $(this).addClass('bshow');
+                $(this).addClass('nsef_btn');
                 contextTr.after(getTr);
+                var getSTr = contextTr.next('.efTr');
+                getSTr.find('form').hide();
+                getSTr.find('.loading').animate({
+                    'display':'none'
+                }, 1000, function(){
+                    $(this).fadeOut('fast');
+                    getSTr.find('form').slideDown();
+                });
                 $('[data-toggle="tooltip"]').tooltip();
             });
 
             $('body').on('click', '.closeEform', function(){
                 var getPTr = $(this).closest('tr'),
                         contextTr = getPTr.prev();
-                contextTr.find('.ef_btn').removeClass('bshow');
+                contextTr.find('.ef_btn').removeClass('nsef_btn');
                 getPTr.remove();
             })
 

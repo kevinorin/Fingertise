@@ -471,7 +471,13 @@ div.tooltip-inner {
 .btn.btn-primary.ef_btn {
     padding: 3px 5px;
     font: inherit;
-    display: none;
+    opacity: 0;
+    visibility: hidden;
+}
+.btn.btn-primary.ef_btn.sef_btn,
+.btn.btn-primary.ef_btn.nsef_btn{
+    opacity: 1;
+    visibility: visible;
 }
 .bshow {
     display: inline-block !important;
@@ -486,6 +492,11 @@ div.tooltip-inner {
     font-size: 20px;
     color: #000000;
     cursor: pointer;
+}
+.loading {
+    width: 50px;
+    display: block;
+    margin: 5px auto;
 }
 @media(min-width:1024px) {
     table.resp-table .editForm td:first-child {
