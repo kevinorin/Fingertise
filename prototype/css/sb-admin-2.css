@@ -516,6 +516,28 @@ div.tooltip-inner {
 .blClrLbl .alert {
     margin: 12px 0 0;
 }
+#pnsFormElem {
+    padding: 0px 10px;
+}
+#pnsFormElem .form-group {
+    margin-right: 5px;
+    line-height: 20px;
+}
+#pnsFormElem .form-group input[type="checkbox"]{
+    margin: 3px 2px 0 2px;
+    float: right;
+}
+
+.preview_learnmore_olay img {
+    display: block;
+    height: auto;
+    margin-right: 10px;
+    max-width: 100%;
+    margin-top: -5px;
+}
+.efmdl .modal-body {
+    font-size: 12px;
+}
 @media(min-width:1024px) {
     table.resp-table .editForm td:first-child {
         width: 25%;
