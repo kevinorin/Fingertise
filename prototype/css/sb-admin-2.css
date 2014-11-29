@@ -574,7 +574,12 @@ div.tooltip-inner {
     background: #f5f5f5;
     font-weight: bold;
 }
-
+#custom_report .panel-heading .form-group {
+    margin-right: 5px;
+}
+#custom_report .panel-heading .form-group:last-child {
+    margin-right: 0;
+}
 
 
 @media(min-width:1024px) {
@@ -590,5 +595,13 @@ div.tooltip-inner {
     table.resp-table .editForm td {
         width: 100%;
         display: block;
+    }
+}
+@media(max-width:767px) {
+    #custom_report .panel-heading .form-group.pull-right {
+        float: none !important;
+    }
+    #custom_report .panel-heading .form-group {
+        margin-right: 0px;
     }
 }
