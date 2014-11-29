@@ -538,6 +538,45 @@ div.tooltip-inner {
 .efmdl .modal-body {
     font-size: 12px;
 }
+.reportModalForm {
+
+}
+#custom_report {
+    margin-bottom: 0;
+}
+#custom_report .panel-heading {
+    font-size: 11px;
+}
+.panel-body .checkbox label {
+    line-height: 20px;
+}
+.form-mdl-box > .col-sm-6 {
+    margin: 15px 0 0;
+}
+.grey_brder {
+    border: 1px solid #dddddd;
+}
+.selOflow {
+    height: 150px;
+    overflow-y: auto;
+}
+#CrDataTable_wrapper {
+    padding-top: 20px;
+}
+#CrDataTable_wrapper > div.row {
+    display: none;
+}
+.total_average .center {
+    display: table-cell;
+}
+.total_average td {
+    border: none !important;
+    background: #f5f5f5;
+    font-weight: bold;
+}
+
+
+
 @media(min-width:1024px) {
     table.resp-table .editForm td:first-child {
         width: 25%;

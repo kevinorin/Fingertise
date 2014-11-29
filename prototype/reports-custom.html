@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Fingertise - Payment History</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="css/plugins/metisMenu/metisMenu.min.css" rel="stylesheet">
+    
+    <!-- DataTables CSS -->
+    <link href="css/plugins/dataTables.bootstrap.css" rel="stylesheet">
+
+
+    <!-- Timeline CSS -->
+    <link href="css/plugins/timeline.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/sb-admin-2.css" rel="stylesheet">
+    <link href="css/ft-styles.css" rel="stylesheet">
+
+    <!-- Morris Charts CSS -->
+    <link href="css/responsive-tables.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+   <!-- Wrapper -->
+   <div id="wrapper">
+      <!-- Navigation -->
+      <nav class="header navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+         <!-- Navbar -->
+         <div class="navbar-header">
+             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                 <span class="sr-only">Toggle navigation</span>
+                 <span class="icon-bar"></span>
+                 <span class="icon-bar"></span>
+                 <span class="icon-bar"></span>
+             </button>
+             <a href="#" class="logo"><img src="../assets/images/logo.jpg" alt="Fingertise"></a>
+                <select class="form-control dash-select">
+                    <option>Advertiser</option>
+                    <option>Developer</option>
+                </select>
+         </div>
+         <!-- /Navbar -->
+
+         <!-- User Nav -->
+         <ul class="nav navbar-top-links navbar-right">
+            <li class="dropdown">
+               <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                  <i class="fa fa-user fa-fw"></i> Welcome : Avery Swallows <i class="fa fa-caret-down"></i>
+               </a>
+               <ul class="dropdown-menu dropdown-user">
+                  <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
+                  </li>
+                  <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
+                  </li>
+                  <li class="divider"></li>
+                  <li><a href="#"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                  </li>
+               </ul>
+            </li>
+         </ul>
+         <!-- /User Nav -->
+
+         <!-- Main Sidebar Nav -->
+         <div class="navbar-default sidebar" role="navigation">
+             <div class="sidebar-nav navbar-collapse">
+                 <ul class="nav" id="side-menu">
+                     <li class="sidebar-search">
+                         <div class="input-group custom-search-form">
+                             <input type="text" class="form-control" placeholder="Search...">
+                             <span class="input-group-btn">
+                                <button class="btn btn-default" type="button">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </span>
+                         </div>
+                         <!-- /input-group -->
+                     </li>
+                     <li>
+                         <a href="ad-dashboard.html"><i class="fa fa-dashboard fa-fw"></i> <span class="sbtxt">Dashboard</span></a>
+                     </li>
+                     <li>
+                        <a href="#"><i class="fa fa-money fa-fw"></i> <span class="sbtxt">Payments</span> <span class="fa arrow"></span></a>
+                        <!-- /nav-second-lvl -->
+                        <ul class="nav nav-second-level">
+                          <li>
+                              <a href="payment-info.html"><i class="fa fa-credit-card fa-fw"></i> Payment Info</a>
+                          </li>
+                          <li class="">
+                              <a class="" href="#"><i class="fa fa-money fa-fw"></i> Payment History</a>
+                          </li>
+                        </ul>
+                        <!-- nav-second-lvl -->
+                     </li>
+                     <li class="active">
+                        <a href="#"><i class="fa fa-area-chart fa-fw"></i> <span class="sbtxt">Reports</span> <span class="fa arrow"></span></a>
+                        <!-- /nav-second-lvl -->
+                        <ul class="nav nav-second-level">
+                          <li>
+                              <a href="reports-charts.html"><i class="fa fa-line-chart fa-fw"></i> Charts</a>
+                          </li>
+                          <li class="active">
+                              <a class="active" href="reports-custom.html"><i class="fa fa-bar-chart fa-fw"></i> Custom Reports</a>
+                          </li></ul>
+                        <!-- nav-second-lvl -->
+                     </li>
+                     <li>
+                        <a href="#"><i class="fa fa-life-bouy fa-fw"></i> <span class="sbtxt">Helpdesk</span> <span class="fa arrow"></span></a>
+                        <!-- /nav-second-lvl -->
+                        <ul class="nav nav-second-level">
+                          <li>
+                              <a href="helpdesk.html"><i class="fa fa-ticket fa-fw"></i> Support Ticket</a>
+                          </li>
+                          <li>
+                              <a href="#"><i class="fa fa-wechat fa-fw"></i> Live Support</a>
+                          </li>
+                         </ul>
+                       <!-- /nav-second-lvl -->
+                     </li>
+                 </ul>
+             </div>
+             <!-- /.sidebar-collapse -->
+         </div>
+         <!-- Main Sidebar Nav -->
+      </nav>
+      <!-- /Navigation -->
+
+      <!-- Page Wrapper -->
+      <div id="page-wrapper">
+         <!-- Dash Stats -->
+         <div class="row blue-box border-box">
+            <div class="col-lg-12">
+               <h1 class="dash-title"><i class="fa fa-bar-chart"></i> Reports</h1>
+               <div class="stats">
+                  <ul>
+                     <li>132,510 <p>Applications</p></li>
+                     <li>$0.00 <p>From 0 impressions</p></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <!-- /Dash Stats -->
+
+         <!-- Main Column -->
+         <div class="row">
+            <div class="col-lg-12 col-md-12 border-box panel panel-default">
+                <div class="panel panel-default" id="custom_report">
+                    <div class="panel-heading">
+                        <div role="form" class="form-inline">
+                            <div class="form-group">
+                                <div aria-label="csReport Form" role="group" class="btn-group">
+                                    <button class="btn btn-sm btn-primary" type="button" data-target="#myModal" data-toggle="modal"><i class="fa fa-gear"></i></button>
+                                    <button class="btn btn-sm btn-primary" type="button" data-target="#myModal" data-toggle="modal">Create NEW / Customize Reports</button>
+                                </div>
+                            </div> &nbsp;<!--end form group-->
+                            <div class="form-group">
+                                <label>Ad Type</label> &nbsp;
+                                <select class="form-control input-sm" style="width: 165px">
+                                    <option value="1">Push Notification Ads</option>
+                                    <option value="3">Icon Ads</option>
+                                    <option value="4">Smartwall Ads</option>
+                                    <option value="14">Banner Ads</option>
+                                    <option value="10">360 Banner Ads</option>
+                                    <option value="8">Add-on 1</option>
+                                </select>
+                            </div> &nbsp;<!--end form group-->
+                            <div class="form-group">
+                                <label>Date Range</label> &nbsp;
+                                <input type="text" value="May 24, 2013 - November 29, 2014" class="form-control input-sm" style="width: 200px"/>
+                            </div><!--end form group-->
+                            <div class="form-group pull-right">
+                                <button class="btn btn-sm btn-default" type="button">CSV <i class="fa fa-download"></i></button>
+                                <button class="btn btn-sm btn-default" type="button">XML <i class="fa fa-download"></i></button>
+                            </div><!--end form group-->
+                        </div>
+                    </div>
+                    <div class="panel-body">
+                        <div role="form" class="form-inline">
+                            <div class="form-group">
+                                <label>Select Type</label> &nbsp;
+                                <a data-original-title="Use this option to choose the type of report you want. If you would like an account-level report, choose Account. If you would like the breakdown by date, choose Applications as the option. You can also choose specific Applications (using the checkboxes) for which you would like the reports to run." data-toggle="tooltip" data-placement="right" title="">
+                                    <i class="fa  fa-info-circle"></i>
+                                </a> &nbsp;
+                                <select class="form-control">
+                                    <option value="1">Account Level</option>
+                                    <option value="2">Application Level</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row form-mdl-box">
+                            <div class="col-sm-6 grey_brder">
+                                <label>Specific Applications</label>
+                                <input class="form-control" readonly style="background: #FFFFFF; cursor: default" value="Type specific Application Name" />
+                                <div class="selOflow form-group">
+                                    <div class="checkbox"><label><input type="checkbox"/> <strong>Select / Deselect ALL</strong></label></div>
+                                    <div class="checkbox"><label><input type="checkbox"/>  Branden First Webview App</label></div>
+                                    <div class="checkbox"><label><input type="checkbox"/> Download Speed Booster</label></div>
+                                    <div class="checkbox"><label><input type="checkbox"/> Download Speed Booster New</label></div>
+                                    <div class="checkbox"><label><input type="checkbox"/> Free Movies Online</label></div>
+                                    <div class="checkbox"><label><input type="checkbox"/> Free Movies Online New</label></div>
+                                    <div class="checkbox"><label><input type="checkbox"/> Internet Mega Speed Booster</label></div>
+                                    <div class="checkbox"><label><input type="checkbox"/> Internet Signal Booster</label></div>
+                                    <div class="checkbox"><label><input type="checkbox"/> Internet Signal Booster New</label></div>
+                                    <div class="checkbox"><label><input type="checkbox"/> Internet Speed Booster</label></div>
+                                    <div class="checkbox"><label><input type="checkbox"/> Internet Speed Master</label></div>
+                                    <div class="checkbox"><label><input type="checkbox"/> Network Signal Booster 01</label></div>
+                                    <div class="checkbox"><label><input type="checkbox"/> Network Speed Booster 01</label></div>
+                                    <div class="checkbox"><label><input type="checkbox"/> News Ads</label></div>
+                                    <div class="checkbox"><label><input type="checkbox"/> News App</label></div>
+                                    <div class="checkbox"><label><input type="checkbox"/> Real Daily Indian Sex Stories</label></div>
+                                    <div class="checkbox"><label><input type="checkbox"/> testapp</label></div>
+                                    <div class="checkbox"><label><input type="checkbox"/> Web Speed Booster</label></div>
+                                    <div class="checkbox"><label><input type="checkbox"/> Wifi Signal Booster 01</label></div>
+                                    <div class="checkbox"><label><input type="checkbox"/> Wifi Signal Booster 01</label></div>
+                                    <div class="checkbox"><label><input type="checkbox"/> asdf</label></div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="grey_brder container-fluid" style="margin: 0 0 10px">
+                                    <label>Specific Applications</label>
+                                    <div class="checkbox"><label><input type="checkbox"/> Date</label></div>
+                                    <div class="checkbox"><label><input type="checkbox"/> New Installs</label></div>
+                                    <div class="checkbox"><label><input type="checkbox"/> Impressions</label></div>
+                                    <div class="checkbox"><label><input type="checkbox"/> CPM</label></div>
+                                    <div class="checkbox"><label><input type="checkbox"/> Earnings</label></div>
+                                </div>
+                                <div class="fsbmt">
+                                    <button class="btn btn-primary" type="button">Run Report</button>
+                                    <button class="btn btn-success" type="button">Save Report</button>
+                                    <button class="btn btn-default" type="button">Clear Report</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="cr_data_tbl">
+                            <table class="table table-striped table-bordered table-hover" id="CrDataTable">
+                                <thead>
+                                <tr role="row">
+                                    <th class="sorting_desc" role="columnheader" tabindex="0"
+                                        aria-controls="CrDataTable" rowspan="1" colspan="1" aria-sort="descending"
+                                        aria-label="Date: activate to sort column ascending">Date
+                                    </th>
+                                    <th class="sorting" role="columnheader" tabindex="0"
+                                        aria-controls="CrDataTable" rowspan="1" colspan="1"
+                                        aria-label="Application: activate to sort column ascending">Application
+                                    </th>
+                                    <th class="sorting" role="columnheader" tabindex="0"
+                                        aria-controls="CrDataTable" rowspan="1" colspan="1"
+                                        aria-label="New Installs: activate to sort column ascending">New Installs
+                                    </th>
+                                    <th class="sorting" role="columnheader" tabindex="0"
+                                        aria-controls="CrDataTable" rowspan="1" colspan="1"
+                                        aria-label="Impressions: activate to sort column ascending">Impressions
+                                    </th>
+                                    <th class="sorting" role="columnheader" tabindex="0"
+                                        aria-controls="CrDataTable" rowspan="1" colspan="1"
+                                        aria-label="CPM: activate to sort column ascending">CPM
+                                    </th>
+                                    <th class="sorting" role="columnheader" tabindex="0"
+                                        aria-controls="CrDataTable" rowspan="1" colspan="1"
+                                        aria-label="Earnings: activate to sort column ascending">Earnings
+                                    </th>
+                                </tr>
+                                </thead>
+                                <tfoot class="total_average">
+                                <tr>
+                                    <td class="center" rowspan="1" colspan="1"></td>
+                                    <td class="center" rowspan="1" colspan="1">Account Total</td>
+                                    <td id="total_install" class="center" rowspan="1" colspan="1">8</td>
+                                    <td id="total_pushes" class="center" rowspan="1" colspan="1">146,285</td>
+                                    <td id="total_cpm" class="center" rowspan="1" colspan="1">$ 0.03</td>
+                                    <td id="total_earnings" class="center" rowspan="1" colspan="1">$ 4.80</td>
+                                </tr>
+                                </tfoot>
+                                <tbody role="alert" aria-live="polite" aria-relevant="all">
+                                <tr class="odd">
+                                    <td class=" sorting_1">2014-11-29</td>
+                                    <td class=""> Account Level</td>
+                                    <td class="">1</td>
+                                    <td class="">7,876</td>
+                                    <td class="">0.02</td>
+                                    <td class="">$ 0.18</td>
+                                </tr>
+                                <tr class="even">
+                                    <td class=" sorting_1">2014-11-28</td>
+                                    <td class=""> Account Level</td>
+                                    <td class="">7</td>
+                                    <td class="">22,565</td>
+                                    <td class="">0.03</td>
+                                    <td class="">$ 0.76</td>
+                                </tr>
+                                <tr class="odd">
+                                    <td class=" sorting_1">2014-11-27</td>
+                                    <td class=""> Account Level</td>
+                                    <td class="">0</td>
+                                    <td class="">22,663</td>
+                                    <td class="">0.03</td>
+                                    <td class="">$ 0.82</td>
+                                </tr>
+                                <tr class="even">
+                                    <td class=" sorting_1">2014-11-26</td>
+                                    <td class=""> Account Level</td>
+                                    <td class="">0</td>
+                                    <td class="">22,676</td>
+                                    <td class="">0.03</td>
+                                    <td class="">$ 0.74</td>
+                                </tr>
+                                <tr class="odd">
+                                    <td class=" sorting_1">2014-11-25</td>
+                                    <td class=""> Account Level</td>
+                                    <td class="">0</td>
+                                    <td class="">23,070</td>
+                                    <td class="">0.02</td>
+                                    <td class="">$ 0.69</td>
+                                </tr>
+                                <tr class="even">
+                                    <td class=" sorting_1">2014-11-24</td>
+                                    <td class=""> Account Level</td>
+                                    <td class="">0</td>
+                                    <td class="">23,124</td>
+                                    <td class="">0.03</td>
+                                    <td class="">$ 0.80</td>
+                                </tr>
+                                <tr class="odd">
+                                    <td class=" sorting_1">2014-11-23</td>
+                                    <td class=""> Account Level</td>
+                                    <td class="">0</td>
+                                    <td class="">24,311</td>
+                                    <td class="">0.03</td>
+                                    <td class="">$ 0.81</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+         </div>
+         <!-- /Main Column -->
+      </div>
+      <!-- /Page Wrapper -->
+   </div>
+   <!-- /Wrapper -->
+
+   <!-- Footer -->
+   <footer>
+      <div id="footer">
+         <div class="container">
+            <div class="foot_link">
+               <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">FAQ</a></li>
+                  <li><a href="#">Privacy Policy</a></li>
+                  <li><a href="#">App Policy</a></li>
+                  <li><a href="#">Opt Out</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">Support</a></li>
+               </ul>
+            </div>
+         </div>
+      </div>
+   </footer>
+   <!-- /Footer -->
+
+   <!--Modal Form-->
+   <div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="myModal" class="modal fade reportModalForm">
+       <div class="modal-dialog">
+           <div class="modal-content">
+               <form role="form">
+               <div class="modal-header">
+                   <button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+                   <h4 id="myModalLabel" class="modal-title">Enter Details</h4>
+               </div>
+               <div class="modal-body">
+                   <div class="form-horizontal">
+                       <div class="form-group">
+                           <label for="inpt1" class="col-sm-4 control-label">Report Name : <span class="req">*</span></label>
+                           <div class="col-sm-8">
+                               <input type="text" class="form-control" id="inpt1">
+                               <label class="checkbox-inline">
+                                   <input type="checkbox">
+                                   Send report to email
+                               </label>
+                           </div>
+                       </div>
+                       <div class="form-group">
+                           <label for="inpt2" class="col-sm-4 control-label">Email Address :  <span class="req">*</span></label>
+                           <div class="col-sm-8">
+                               <input type="text" class="form-control" id="inpt2">
+                           </div>
+                       </div>
+                       <div class="form-group">
+                           <label for="inpt3" class="col-sm-4 control-label">Select Format  :  <span class="req">*</span></label>
+                           <div class="col-sm-8">
+                               <input type="text" class="form-control" id="inpt3">
+                           </div>
+                       </div>
+                   </div>
+               </div>
+               <div class="modal-footer text-right">
+                   <button data-dismiss="modal" class="btn btn-success" type="button">Yes</button>
+                   <button class="btn btn-warning" type="button" data-dismiss="modal">No</button>
+               </div>
+               </form>
+           </div>
+           <!-- /.modal-content -->
+       </div>
+       <!-- /.modal-dialog -->
+   </div>
+   <!--Modal Form-->
+
+
+   <!-- jQuery -->
+   <script src="js/jquery.js"></script>
+
+   <!-- Bootstrap Core JavaScript -->
+   <script src="js/bootstrap.min.js"></script>
+
+   <!-- Metis Menu Plugin JavaScript -->
+   <script src="js/plugins/metisMenu/metisMenu.js"></script>
+
+   <!-- Custom Theme JavaScript -->
+   <script src="js/sb-admin-2.js"></script>
+
+    <!-- DataTables JavaScript -->
+    <script src="js/plugins/dataTables/jquery.dataTables.js"></script>
+    <script src="js/plugins/dataTables/dataTables.bootstrap.js"></script>
+
+    <!-- Page-Level Demo Scripts - Tables - Use for reference -->
+    <script>
+    $(document).ready(function() {
+        $('#CrDataTable').dataTable({
+            "order": [[ 0, "desc" ]],
+            searching: false,
+            paging: false
+        });
+        $('[data-toggle="tooltip"]').tooltip();
+    });
+    </script>
+
+</body>
+</html>
