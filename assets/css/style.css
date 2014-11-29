@@ -579,7 +579,7 @@ p.content {
 
 .home_left {
 	width: 290px;
-	float: left;
+	/*float: left;*/
 	text-align: right;
 	background: url(../images/top_angle_arrow.png) no-repeat right top;
 	padding: 71px 0 0 0px;
